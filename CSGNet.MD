@@ -17,7 +17,7 @@
 - real-world scenarios where the annotations of pedestrian bounding boxes are unavailable and the target person needs to be found from whole images
 
 ## Idea / Observation / Contribution
-- Investigate how to localize and match query persons from the scene images without relying on the annotations of candidate boxes
+- Automatic generation of a modelling program given target shape by using a neural architecture.
 - Propose an end-to-end deep learning framework to jointly handle both tasks
 - A large-scale and scene-diversified person search dataset, which contains 18,184 images, 8,432 persons, and 99,809 annotated bounding boxes.
 - Joint optimization brings multiple benefits ... We share a fully convolutional neural network to extract features for detecting pedestrians and producing discriminative re-id features.
@@ -51,7 +51,8 @@
 http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html
 
 ## Source code
-https://github.com/ShuangLI59/person_search
+2D Code: https://github.com/Hippogriff/CSGNet
+3D Code: https://github.com/Hippogriff/3DCSGNet
 
 ## Dataset
 Need to send request
