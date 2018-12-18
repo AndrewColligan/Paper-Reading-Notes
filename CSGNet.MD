@@ -7,29 +7,33 @@
 - Year: 2018
 
 # Score
-- Idea: 4
+- Idea: 5
 - Usability: 4
 - Presentation: 4
 - Overall: 4
 
 # Contributions
 ## Problem addressed / Motivation
-- real-world scenarios where the annotations of pedestrian bounding boxes are unavailable and the target person needs to be found from whole images
+- CAD designers do not represent shape using enumerations of individual elements (e.g. pixels, voxels or points), which are currently used in generative model methods.
+- Higher-level primitives are used instead such as: parametric curves (e.g. Bezier curves) or basic shapes (e.g. circles or polygons).
+- The desired shape is produced by performing operations on the primitives (e.g. Boolean, deformation, extrusions).
+- This allows for easy editability, compact design and captures human shape perception (e.g. view invariance, compositionality and symmetry).
 
 ## Idea / Observation / Contribution
-- Automatic generation of a modelling program given target shape by using a neural architecture.
-- Propose an end-to-end deep learning framework to jointly handle both tasks
-- A large-scale and scene-diversified person search dataset, which contains 18,184 images, 8,432 persons, and 99,809 annotated bounding boxes.
-- Joint optimization brings multiple benefits ... We share a fully convolutional neural network to extract features for detecting pedestrians and producing discriminative re-id features.
+- Develop a neural architecture for **shape parsing** into constituent modelling primitives and operations within the structure of **Constructive Solid Geometry (CSG)**.
+- Efficient and effective architecture for creating CSG programs for 2D and 3D shapes.
+- Shown that shape parsing can be performed on a new dataset by way of reinforcement learning without a target program.
+- Shape parser outperforms other state-of-the-art detection approaches that only utilise bottom-up cues (this may be due to the aprser reasoning about the presence and order during parsing unlike detection). 
 
 ## Formulation / Solver / Implementation
-- Utilize VGG16 model for convolutional layers (conv1 and conv5) in FCN.
-- Follow faster rcnn for the pedestrian proposal network
-- From pedestrian proposals, we apply three fully connection layers (fc6-8) to generate final feature for person re-id
+- Utilize **autoencoder** (encoder = CNN & decoder = RNN) for neural shape parser.
+- Decoder produces a probability distribution over programs represented by a sequence of instructions. 
+- Gated Recurrent Units (GRU) used as RNN due to strong performance with sequential prediction tasks such as generation natural language and speech.
 
 ## Useful info / tips
-- If the softmax target is very sparse and the minibatch contains only a few label classes, the gradients would be biased on these classes at each SGD iteration
-- It is observed that detectors greatly affect the person search performance of baseline method and there is still a big gap between using the ground truth bounding boxes and the automatically detected ones.
+- The output does not have a constant dimensionality, due to the number of primitives and operations changes for different shapes.
+- Order of operations matters.
+- Method tries to generate program with fewest instructions.
 
 # Evaluation
 ## Dataset
@@ -51,8 +55,8 @@
 http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html
 
 ## Source code
-2D Code: https://github.com/Hippogriff/CSGNet
-3D Code: https://github.com/Hippogriff/3DCSGNet
+- 2D Code: https://github.com/Hippogriff/CSGNet
+- 3D Code: https://github.com/Hippogriff/3DCSGNet
 
 ## Dataset
 Need to send request
@@ -66,8 +70,10 @@ https://drive.google.com/open?id=0B-GOvBat1maOVUE3WmNNUVRGamc
 - How to perform re-id algorithm in current framework?
 
 # Build upon
-- Performance is low on low-resolution images
-- Extend to video data (plus tracking)
+- Generalise approach for longer programs (more advanced reward functions to balance perceptual similarity to the input image and program length).
+- Explore combining bottom-up proposals and top-down approaches for shape parsing, in addition to exploring top-down program generation strategies.
+- Look into producing extrusion feature tree instead of CSG program.
+- Possibility of reduced order modelling.
 
 # Paper connections
 - Faster RCNN
