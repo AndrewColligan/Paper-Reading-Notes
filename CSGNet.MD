@@ -29,6 +29,7 @@
 - Utilize **autoencoder** (encoder = CNN & decoder = RNN) for neural shape parser.
 - Decoder produces a probability distribution over programs represented by a sequence of instructions. 
 - Gated Recurrent Units (GRU) used as RNN due to strong performance with sequential prediction tasks such as generation natural language and speech.
+- The space of programs are described according to a context-free grammar.
 
 ## Useful info / tips
 - The output does not have a constant dimensionality, due to the number of primitives and operations changes for different shapes.
