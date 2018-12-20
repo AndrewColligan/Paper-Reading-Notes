@@ -14,3 +14,5 @@ To generate a string of terminal symbols from a CFG, we:
 - Begin with a string consisting of the start symbol.
 - Apply one of the productions with the start symbol on the left hand size, replacing the start symbol with the right hand sidde of the production.
 - Repeat the process of selecting nonterminal symbols in the string,and replacing them with the right hand side of some corresponding production, until all nonterminals have been replaced by terminal symbols.
+
+Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
