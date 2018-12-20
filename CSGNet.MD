@@ -47,35 +47,37 @@
 ## Dataset
 - For supervised learning, the dataset consists of shape and program pairs.
 - For unsupervised learning, the dataset consists of the shape only.
-
+- Primitive types: 2D (*square, circle* or *triangle*), 3D (*cube, sphere* or *cylinder*).
+- Datasets consisted of:
+  1. Automatically generated dataset of 2D and 3D shapes using CSG programs (Supervised).
+  2. 2D CAD shapes from web where ground-truth programs are not available (Unsupervised).
+  3. Logo images from web where ground-truth programs are not available (Unsupervised).
 
 ## Metrics
-- designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
-- meanAveraged Precision (mAP): A candidate window is considered as positive if its overlap with the ground truth is larger than 0.5
-- top-k matching rate on bounding boxes: A matching is counted if a bounding box among the top-k predicted boxes overlaps with the ground truth larger than the threshold
+- For 2D CSG, there were 400 unique instructions corresponding to 396 different primitve types, discrete locations and sizes, the 3 boolean operations and the stop symbols.
+- For 3D CSG, there were 6635 unique instructions with 6631 different types of primitves with different sizes and locations, plus 3 boolean modelling operations and a top symbol.
+- 64x64x64 voxelised input.
 
 ## Results
-- Baseline detector: ACF + Deep detector
-- Baseline re-id methods: BoW with cosine distance, DenseSift+ColorHist with Euclidean and KISSME distance metric, IDNet
+- Different beam sizes (k = 1, 5 & 10) compared using Nearest Neighbour with k = 10 giving the lowest CD of 1.39.
+- Shape parser is evaluated as a primitive detector (output primitves of program evualated instead of operations), allowing for direct comparision to bottom-up object detection techniques (Faster R-CNN based on VGG-M network and Hough tranform).
+- CSGNet (k = 40) outperformed R-CNN for circle, square and triangle detection whith a higher speed on the same GPU (NVIDA 1070).
 
 # Resource
 ## Project page
-http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html
 
 ## Source code
 - 2D Code: https://github.com/Hippogriff/CSGNet
 - 3D Code: https://github.com/Hippogriff/3DCSGNet
 
 ## Dataset
-Need to send request
-https://drive.google.com/open?id=0B-GOvBat1maOVUE3WmNNUVRGamc
-
+ 
 ## Other paper reading notes
 
 ## Others
+- PyTorch.
 
 # Questions
-- How to perform re-id algorithm in current framework?
 
 # Build upon
 - Generalise approach for longer programs (more advanced reward functions to balance perceptual similarity to the input image and program length).
@@ -84,5 +86,5 @@ https://drive.google.com/open?id=0B-GOvBat1maOVUE3WmNNUVRGamc
 - Possibility of reduced order modelling.
 
 # Paper connections
-- Faster RCNN
+- Faster R-CNN
 
