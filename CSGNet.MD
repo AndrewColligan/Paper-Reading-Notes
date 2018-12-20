@@ -29,18 +29,25 @@
 - Utilize **autoencoder** (encoder = CNN & decoder = RNN) for neural shape parser.
 - Decoder produces a probability distribution over programs represented by a sequence of instructions. 
 - Gated Recurrent Units (GRU) used as RNN due to strong performance with sequential prediction tasks such as generation natural language and speech.
-- The space of programs are described according to a context-free grammar.
+- The space of programs are described according to a **context-free grammar (CFG)**.
+- If target programs are available, the architecture is trained with a supervised learning technique.
+- Without target programs, a recontruction error is minimised between the shape obtained from the predicted program and the target shape (reinforcement learning).
+- **Policy gradient** techniques used to minimise this error, as gradient descent is not possible due the output space is discrete and execution engines are usually not differentiable.
+- Want to learn the network parameters that maximise the expected reward (the similarity between the generated and target shape measured using the *Chamfer distance CD*).
+- **Beam search** used to predict the most likely instruction at each time step.
+- **Visually-guided refinement** using the position and size of the primitives is used to maximise the reward, while keeping the primitive type the same.
 
 ## Useful info / tips
 - The output does not have a constant dimensionality, due to the number of primitives and operations changes for different shapes.
 - Order of operations matters.
 - Method tries to generate program with fewest instructions.
+- Not all programs are valid therefore the network has to learn to generate grammatical programs.
 
 # Evaluation
 ## Dataset
-- Own dataset (E2E Person Search)
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+- For supervised learning, the dataset consists of shape and program pairs.
+- For unsupervised learning, the dataset consists of the shape only.
+
 
 ## Metrics
 - designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
