@@ -80,7 +80,8 @@
 # Questions
 
 # Build upon
-- Generalise approach for longer programs (more advanced reward functions to balance perceptual similarity to the input image and program length).
+- Currently reinforcement learning is not utilised for 3D shape method.
+- Generalise approach for longer programs (more advanced reward functions to balance perceptual similarity to the input image and program length). Currently 3D method has a max program length of 7.
 - Explore combining bottom-up proposals and top-down approaches for shape parsing, in addition to exploring top-down program generation strategies.
 - Look into producing extrusion feature tree instead of CSG program.
 - Possibility of reduced order modelling.
