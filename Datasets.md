@@ -24,3 +24,6 @@ Dataset containing CAD models from 40 categories.
 | MVCNN            | 90.1%                     | 79.5%                |                           |                      |
 | PointNet         |                           |                      | 77.6%                     |                      |
 | VoxNet           | 83%                       |                      | 92%                       |                      |
+
+### Link
+http://modelnet.cs.princeton.edu/
