@@ -7,7 +7,7 @@
 
 # Score
 - Idea: 3
-- Usability: 3
+- Usability: 4
 - Presentation: 3
 - Overall: 3
 
@@ -18,7 +18,7 @@
 - As it is used for augmented reality and self driving cars.
 
 ## Idea / Observation / Contribution
-- Combine volumetric voxel representation and 2D multi-view representation.
+- Combine volumetric voxel representation and 2D multi-view representation for training relatively weak classifiers.
 - Introduce two new CNNs for volumetric data, with one having significantly less number of parameters compared to standard CNNs used on 2D RGB images such as AlexNet.
 - One of the networks uses an inception module used in GoogLeNet.
 - This utilises transfer learning from pre-trained network on large ImageNet dataset for the multi-view representation and uses the volumetric information.
@@ -33,9 +33,8 @@
 
 # Evaluation
 ## Dataset
-- Automatically generated cubes with single hole features in each, with a label of manufacturable or non-manufacturable.
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+- 3D model classification has been limited due to unavailability of large scale training sets like ImageNet.
+
 
 ## Metrics
 - designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
