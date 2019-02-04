@@ -8,6 +8,9 @@ Repo of paper reading notes for 3D shape machine learning. Papers by year includ
 ## 2017
 - ![O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/O-CNN.md)
 
+## 2016
+- ![FusionNet: 3D Object Classification Using Multiple Data Representation](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/FusionNet.md)
+
 ## 2015
 - ![3D ShapeNets: A Deep Representation for Volumetric Shapes](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/ShapeNet.md)
       
