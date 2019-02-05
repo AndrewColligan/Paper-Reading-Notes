@@ -17,13 +17,14 @@ Dataset containing CAD models from 10 categories.
 ### ModelNet40
 Dataset containing CAD models from 40 categories.
 
-| Algorithm        | ModelNet40 Classification | ModelNet40 Retrieval | ModelNet10 Classification | ModelNet10 Retrieval |  
-| ---------------- |         ---------         |        ---------     |      ---------            |       ---------      |
-| 3DShapeNet       | 77%                       | 49.2%                | 83.5%                     | 68.3%                |
-| FusionNet        | 90.8%                     |                      | 93.11%                    |                      |
-| MVCNN            | 90.1%                     | 79.5%                |                           |                      |
-| PointNet         |                           |                      | 77.6%                     |                      |
-| VoxNet           | 83%                       |                      | 92%                       |                      |
+| Algorithm        | Input        | ModelNet40 Classification | ModelNet40 Retrieval | ModelNet10 Classification | ModelNet10 Retrieval |  
+| ---------------- | ------------ |        ---------          |        ---------     |      ---------            |       ---------      |
+| 3DShapeNet       | volumetric   | 77.3%                     | 49.2%                | 83.5%                     | 68.3%                |
+| FusionNet        | vol + mul    | 90.8%                     |                      | 93.11%                    |                      |
+| MVCNN            | multi-view   | 90.1%                     | 79.5%                |                           |                      |
+| PointNet         | points       |                           |                      | 77.6%                     |                      |
+| VoxNet           | volumetric   | 83%                       |                      | 92%                       |                      |
+| NormalNet        | vol + norm   | 88.8%                     |                      | 93.1                      |                      |
 
 ### Link
 http://modelnet.cs.princeton.edu/
