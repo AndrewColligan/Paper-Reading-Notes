@@ -50,7 +50,7 @@
 
 
 ## Metrics
-
+- Compare performance of individual networks separately and combined two or more networks.
 
 ## Results
 
