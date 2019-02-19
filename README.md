@@ -14,4 +14,5 @@ Repo of paper reading notes for 3D shape machine learning. Papers by year includ
 
 ## 2015
 - 3D ShapeNets: A Deep Representation for Volumetric Shapes ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/ShapeNet.md)
+- Multi-view Convolutional Neural Networks for 3D Shape Recognition ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/MV-CNN.md)
       
