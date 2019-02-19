@@ -62,6 +62,7 @@
 - Was also able to be used in shape segmentation.
 - Capable of modelling shapes with fewer training examples available.
 - Higher degree of freedom representations can be achieved.
+- IoU ≈ 0.26
 
 # Resource
 ## Paper
