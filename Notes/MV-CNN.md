@@ -23,8 +23,13 @@
 - MV-CNN related to **jittering** where transformed copies of the data are added during training to learn invariances to transformations; such as rotation or translation.
 - CNN learns to combine the views instead of averaging, and can use the more informative views of the object for prediction while ignoring others.
 
-## Formulation / Solver / Implementation
+<img src='http://vis-www.cs.umass.edu/mvcnn/images/mvcnn.png' alt="MV-CNN Network" width=600 align="middle">
 
+
+
+## Formulation / Solver / Implementation
+- All parameters of CNN are learned discriminatively to produce a single compact descriptor for 3D shape from the multiple views.
+- Phong reflection model used to generate rendered views of polygon meshes, which are rendered under a perspective projection and the pixel colour is found by interpolating reflected intensity of polygon vertices.
 
 ## Useful info / tips
 
