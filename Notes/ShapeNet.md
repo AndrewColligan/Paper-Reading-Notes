@@ -25,7 +25,6 @@
 ![ShapeNet](https://camo.githubusercontent.com/35839c3e3ad4a4cc43412b0deef4a740cbc32909/68747470733a2f2f6169322d73322d7075626c69632e73332e616d617a6f6e6177732e636f6d2f666967757265732f323031362d31312d30382f336564323333383632383461353633396362336538626161656366343936636161373636653333352f312d466967757265312d312e706e67 "ShapeNet")
 
 
-
 ## Formulation / Solver / Implementation
 - Convolutions used to reduce number of model parameters, due to the shared weights.
 - Convolutional Deep Belief Network
@@ -52,6 +51,9 @@
 - 3D shape represented by 24 x 24 x 24 voxel grid with 3 extra cells of padding in both directions to reduce convolution border artifacts.
 
 ## Results
+- 3D Shape Classification and Retrival
+- View-Based 2.5D Recognition tested against kNN and Iterated Closest Point with top 10 matching. Achieved highest accuracy in 6/10 of classes.
+- Next-Best-View Prediction against baseline of (1) random selection amoungst candidate views, (2) choose the view with the highest new visibility, (3) choose the view which is farthest away from the previous view (based on camera center distances). 8 view candiates randomly distributed on sphere of object.
 
 # Resource
 ## Project page
@@ -63,16 +65,6 @@ https://github.com/zhirongw/3DShapeNets
 ## Dataset
 http://3dshapenets.cs.princeton.edu/
 
-## Other paper reading notes
-
-## Others
-
-# Questions
-
-
-# Build upon
-
-
 # Paper connections
 - Voxels
 - Convolutional Deep Belief Network
@@ -80,4 +72,3 @@ http://3dshapenets.cs.princeton.edu/
 # Specs
 - Intel XEON E5-2690 CPU
 - NVIDIA K40c GPU
-
