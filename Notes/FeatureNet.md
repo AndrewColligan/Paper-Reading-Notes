@@ -73,6 +73,9 @@ https://github.com/zibozzb/Machining-feature-dataset
 # Build upon
 - More complex network could be used.
 - Different representation.
+- Multiple trained 3D CNN's could be used simultaneously to reason about manufacturability of a given 3D CAD model using different **manufacturing processes**.
+- Integrate the tasks of segmentation and classification.
+- By restructuring the CNN architecture and training on large multi-feature dataset, both of these tasks can be performed simultaneously by the CNN.
 
 # Key Words
 - Voxel
