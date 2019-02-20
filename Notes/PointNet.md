@@ -1,10 +1,10 @@
 # Basic info
-- Title: FeatureNet: Machining feature recognition based on 3D Convolutional Neural Network
-- Author: Zhibo Zhang, Prakhar Jaiswal, Rahul Rai
-- Affiliation: Manufacturing and Design (MAD) Lab, Department of Mechanical and Aerospace Engineering, University of Buffalo
-- Publication status: Journel of Computer-Aided Design
-- Short name: FeatureNet
-- Year: 2018
+- Title: PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation
+- Author: Charles R. Qi, Hao Su, Kaichun Mo, Leonidas J. Guibas
+- Affiliation: Stanford University
+- Publication status: 2017 IEEE Conference on Computer Vision and Pattern Recognition
+- Short name: PointNet
+- Year: 2017
 
 # Score
 - Idea: 
@@ -14,47 +14,38 @@
 
 # Contributions
 ## Problem addressed / Motivation
-- Disconnect between CAD and CAM. 
-- CAPP is focussed on generating a set of manufacturing operations to fabricate a given part specified by its CAD model. 
-- CAPP has to interpret a given CAD model in terms of *features*, to reason about the fabrication instructions.
-- Features are semantically higher level geometric elements such as hole, slot and pocket etc.
+- Input data formats for NN architectures are regular.
+- Point clouds or meshes are not regular format, therefore are normally converted in different representation.
+- This makes data unnecessarily voluminous, which introduces quantisation artifacts that obscure natural invariances of data.
 
 ## Idea / Observation / Contribution
-- Recognition of **machining features** that involve recognising different features in the CAD model of a given part.
-- Use machine learning as:
-	1. Inability to learn and generalise.
-	2. Lack of tolerance to noise in the input CAD models.
-	3. Computationally intensive and inflexible.
-	4. Focused on specific types of CAD representation and thus not generalisable in cases where interoperability between different geometric representation is required.
-	5. Limited in ability to handle feature variations.
+- Network that directly takes point clouds as input and outputs either class labels for entire input or per point segment/part labels for each point of the input.
+- Network learns a set of optimisation functions that select interesting or informative points of the point cloud and encode the reason for their selection.
+
 
 ## Formulation / Solver / Implementation
-- Deep 3D Convolutional Neural Networks (3D-CNNs).
+- As point cloud is just a set of points and therefore invariant to permutations of its members, necessitating certain symmetrisations in the net computation.
+- Invariances to rigid motions need to be considered.
 
 ## Useful info / tips
-
+- Point clouds are simple and unified structures that avoid the combinatorial irregularities and complexities of meshes, and thus are easier to learn.
 
 # Evaluation
 ## Dataset
-- Automatically generated cubes with single hole features in each, with a label of manufacturable or non-manufacturable.
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+
 
 ## Metrics
-- designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
-- meanAveraged Precision (mAP): A candidate window is considered as positive if its overlap with the ground truth is larger than 0.5
-- top-k matching rate on bounding boxes: A matching is counted if a bounding box among the top-k predicted boxes overlaps with the ground truth larger than the threshold
+
 
 ## Results
-- Baseline detector: ACF + Deep detector
-- Baseline re-id methods: BoW with cosine distance, DenseSift+ColorHist with Euclidean and KISSME distance metric, IDNet
+
 
 # Resource
 ## Project page
-http://vis-www.cs.umass.edu/mvcnn/
+
 
 ## Source code
-https://github.com/WeiTang114/MVCNN-TensorFlow
+
 
 ## Dataset
 
@@ -64,12 +55,11 @@ https://github.com/WeiTang114/MVCNN-TensorFlow
 ## Others
 
 # Questions
-- How to perform re-id algorithm in current framework?
 
 # Build upon
-- Performance is low on low-resolution images
-- Extend to video data (plus tracking)
 
 # Paper connections
-- Faster RCNN
 
+# Key Words
+
+# Equipment & Software
