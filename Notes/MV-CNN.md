@@ -25,29 +25,25 @@
 
 <img src='http://vis-www.cs.umass.edu/mvcnn/images/mvcnn.png' alt="MV-CNN Network" width=600 align="middle">
 
-
-
 ## Formulation / Solver / Implementation
 - All parameters of CNN are learned discriminatively to produce a single compact descriptor for 3D shape from the multiple views.
 - Phong reflection model used to generate rendered views of polygon meshes, which are rendered under a perspective projection and the pixel colour is found by interpolating reflected intensity of polygon vertices.
-
-## Useful info / tips
-
+- **1st camera setup** - all input shapes assumed to be orientated upright along a consistent axis. 12 rendered views from 12 cameras every 30 degrees.
+- **2nd camera setup** - 20 virtual cmeras at 20 vertices of an icosahedron enclosing the shape, as don't know the orientation. Generate 4 rendered views from each camera, using 0, 90. 180, 270 degrees rotation to yield 80 views.
+- MVCNN optimised for classification not retrieval. Instead of learning different objective function, learn **Mahalanobis metric W**.
 
 # Evaluation
 ## Dataset
-- Automatically generated cubes with single hole features in each, with a label of manufacturable or non-manufacturable.
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+- ModelNet
 
 ## Metrics
-- designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
-- meanAveraged Precision (mAP): A candidate window is considered as positive if its overlap with the ground truth is larger than 0.5
-- top-k matching rate on bounding boxes: A matching is counted if a bounding box among the top-k predicted boxes overlaps with the ground truth larger than the threshold
+- Compared against 3DShapeNet, Spherical Harmonics descriptor (SPH), LightField descriptor (LFD) and Fisher vectors extracted on the same rendered views of the shapes used as input to our networks. 
 
 ## Results
-- Baseline detector: ACF + Deep detector
-- Baseline re-id methods: BoW with cosine distance, DenseSift+ColorHist with Euclidean and KISSME distance metric, IDNet
+- 12 View Classification Accuracy = 88.6%.
+- 12 View Retrieval = 62.8%.
+- 80 View Classification Accuracy = 89.9%.
+- 80 Views Retrieval = 70.1%.
 
 # Resource
 ## Project page
@@ -56,20 +52,6 @@ http://vis-www.cs.umass.edu/mvcnn/
 ## Source code
 https://github.com/WeiTang114/MVCNN-TensorFlow
 
-## Dataset
-
-
-## Other paper reading notes
-
-## Others
-
-# Questions
-- How to perform re-id algorithm in current framework?
-
-# Build upon
-- Performance is low on low-resolution images
-- Extend to video data (plus tracking)
-
-# Paper connections
-- Faster RCNN
-
+# Key Words
+- CNN
+- Multi-View
