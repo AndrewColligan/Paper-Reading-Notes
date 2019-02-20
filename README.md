@@ -9,6 +9,7 @@ Repo of paper reading notes for 3D shape machine learning. Papers by year includ
 ## 2017
 - O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/O-CNN.md)
 - 3D-PRNN: Generating Shape Primitives with Recurrent Neural Networks ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/3D-PRNN.md)
+- PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/PointNet.md)
 
 ## 2016
 - FusionNet: 3D Object Classification Using Multiple Data Representation ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/FusionNet.md)
