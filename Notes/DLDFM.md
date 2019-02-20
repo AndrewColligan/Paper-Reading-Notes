@@ -17,7 +17,7 @@
 - Parts or products need to meet its specifications, while still being able to be manufactured.
 - Feedback to a designer on a product's manufacturing feasibility is only given after the final design is created.
 - This leads to a iterative process, leading to longer product development times and increased costs.
-- Voxel-based occupancy grid representation do not jave information on the surfaces of objects without additional processing.
+- Voxel-based occupancy grid representation do not have information on the surfaces of objects without additional processing.
 - Also not robust enough to capture information about the location, size or shape of a feature within an object.
 
 ## Idea / Observation / Contribution
