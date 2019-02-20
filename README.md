@@ -4,6 +4,7 @@ Repo of paper reading notes for 3D shape machine learning. Papers by year includ
 ## 2018
 - CSGNet: Neural Shape Parser for Constructive Solid Geometry ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/CSGNet.MD)
 - Learning localized features in 3D CAD models for manufacturability analysis of drilled holes (DLDFM) ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/DLDFM.md)
+- FeatureNet: Machining Feature Recognition Based on 3D Convolution Neural Network ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/FeatureNet)
 
 ## 2017
 - O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis ![Link](https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/O-CNN.md)
