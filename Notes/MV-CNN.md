@@ -7,10 +7,10 @@
 - Year: 2015
 
 # Score
-- Idea: 
-- Usability: 
-- Presentation: 
-- Overall: 
+- Idea: 5
+- Usability: 2 
+- Presentation: 4
+- Overall: 3
 
 # Contributions
 ## Problem addressed / Motivation
