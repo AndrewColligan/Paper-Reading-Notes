@@ -4,6 +4,7 @@
 - Affiliation: Department of Mechanical Engineering, Iowa State University, IA, USA
 - Publication: Journel of Computer Aided Geometric Design
 - Short name: DLDFM
+- Year: 2018
 
 # Score
 - Idea: 3
