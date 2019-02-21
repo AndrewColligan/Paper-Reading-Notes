@@ -61,10 +61,10 @@ http://stanford.edu/~rqi/pointnet/
 ## Source code
 https://github.com/charlesq34/pointnet
 
-# Key Words
+## Key Words
 - Point cloud 
 - MLP
 
-# Equipment & Software
+## Equipment & Software
 - Python 2.7
--Tensorflow 1.01
+- Tensorflow 1.01
