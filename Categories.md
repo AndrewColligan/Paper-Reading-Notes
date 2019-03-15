@@ -6,7 +6,7 @@ Academic papers organised into their appropiate categories.
 - Graph
 - Hybrid
 - Mutli-View
-- Octree
+- [Octree](#octree)
 - Point Cloud
 - Primitives
 - Voxels
