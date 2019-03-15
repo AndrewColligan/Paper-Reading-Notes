@@ -2,14 +2,14 @@
 Academic papers organised into their appropiate categories.
 
 **Machine Learning** are organised by their shape format:
-- Geodesic
-- Graph
-- Hybrid
-- Mutli-View
+- [Geodesic](#geodesic)
+- [Graph](#graph)
+- [Hybrid](#hybrid)
+- [Mutli-View](#multi-view)
 - [Octree](#octree)
-- Point Cloud
-- Primitives
-- Voxels
+- [Point Cloud](#point-cloud)
+- [Primitives](#primitives)
+- [Voxels](#voxels)
 
 
 # Machine Learning
