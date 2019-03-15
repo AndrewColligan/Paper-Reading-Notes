@@ -25,7 +25,9 @@
 - Contribution is to learn 3D primitives representations of objects from unannotated 3D meshes.
 - Method to fit primitves from **point clouds**.
 
-<img src='https://github.com/zouchuhang/3D-PRNN/raw/master/figs/teasor.jpg' width=400>
+<p align="center">
+	<img src='https://github.com/zouchuhang/3D-PRNN/raw/master/figs/teasor.jpg' width=400>
+</p>
 
 ## Formulation / Solver / Implementation
 - Autoencoder architecture.
@@ -42,7 +44,7 @@
 
 # Evaluation
 ## Dataset
-- 3 classes containing models of chairs, tables and drawers.
+- 3 classes containing models of chairs, tables and drawers from ModelNet.
 - NYU Depth V2.
 
 ## Metrics
@@ -72,6 +74,9 @@ https://arxiv.org/abs/1708.01648
 https://github.com/zouchuhang/3D-PRNN
 
 # Build upon
+- Primitive configurations beyond cuboids (i.e. cylinders or spheres).
+- Encoding explicit joints and spatial relationship.
+- Use same method of loss and primitive decription for adding rotations to CSGNet.
 - Look into method's code for using point cloud.
 
 # Key Words
