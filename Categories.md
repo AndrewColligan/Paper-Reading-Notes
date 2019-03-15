@@ -62,6 +62,15 @@ Point cloud is an important type of geometric data structure. Due to its irregul
 ## Primitives
 ### 2018
 <details>
+ <summary><b>Physical Primitive Decomposition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/PPD.md">[Paper Note]</a></summary>
+ <hr>
+ <p align="justify">
+Objects are made of parts, each with distinct geometry, physics, functionality, and affordances. Developing such a distributed, physical, interpretable representation of objects will facilitate intelligent agents to better explore and interact with the world. In this paper, we study physical primitive decomposition|understanding an object through its components, each with physical and geometric attributes. As annotated data for object parts and physics are rare, we propose a novel formulation that learns physical primitives by explaining both an object's appearance and its behaviors in physical events. Our model performs well on block towers and tools in both synthetic and real scenarios; we also demonstrate that visual and physical observations often provide comple- mentary signals. We further present ablation and behavioral studies to better understand our model and contrast it with human performance.
+ </p>
+ <hr>
+</details>
+
+<details>
  <summary><b>CSGNet: Neural Shape Parser for Constructive Solid Geometry</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/CSGNet.MD">[Paper Note]</a></summary>
  <hr>
  <p align="justify">
