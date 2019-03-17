@@ -37,7 +37,9 @@
 - To recognise multiple features on a CAD model, features are segmented using **watershed segmentation algorithm**.
 - Each segmented feature is then passed through the trained model for recognition.
 
-<img src="https://github.com/zibozzb/FeatureNet/raw/master/img/1.png" alt="FeatureNet Network" align="middle" width="800">
+<p align="center">
+	<img src="https://github.com/zibozzb/FeatureNet/raw/master/img/1.png" alt="FeatureNet Network" align="middle" width="800">
+</p>
 
 ## Useful info / tips
 - Due to discretization of input models into voxels, small noise has little effect on performance.
@@ -49,7 +51,9 @@
 - 24000 models belonging to 24 classes.
 - 6000 different samples at 6 orientations.
 
-<img src="https://github.com/zibozzb/FeatureNet/raw/master/img/2%20(1).png" alt="FeatureNet Dataset" align="middle" width="400">
+<p align="center">
+	<img src="https://github.com/zibozzb/FeatureNet/raw/master/img/2%20(1).png" alt="FeatureNet Dataset" align="middle" width="400">
+</p>
 
 ## Metrics
 - 64 x 64 x 64 voxel grid
