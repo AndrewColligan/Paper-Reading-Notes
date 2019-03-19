@@ -14,6 +14,16 @@ Academic papers organised into their appropiate categories.
 
 # Machine Learning
 ## Hybrid
+### 2018
+<details>
+ <summary><b>PointGrid: A Deep Network for 3D Shape Understanding</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/PointGrid.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Volumetric grid is widely used for 3D deep learning due to its regularity. However the use of relatively lower order local approximation functions such as piece-wise constant function (occupancy grid) or piece-wise linear function (distance field) to approximate 3D shape means that it needs a very high-resolution grid to represent finer geometry details, which could be memory and computationally inefficient. In this work, we propose the PointGrid, a 3D convolutional network that incorporates a constant number of points within each grid cell thus allowing the network to learn higher order local approximation functions that could better represent the local geometry shape details. With experiments on popular shape recognition benchmarks, PointGrid demonstrates state-of-the-art performance over existing deep learning methods on both classification and segmentation.
+</p>
+<hr>
+</details>
+
 ### 2016
 <details>
  <summary><b>FusionNet: 3D Object Classification Using Multiple Data Representation</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/FusionNet.md">[Paper Note]</a></summary>
@@ -23,7 +33,6 @@ High-quality 3D object recognition is an important component of many vision and 
   </p>
 <hr>
 </details>
-
 
 ## Multi-View
 ### 2015
@@ -47,18 +56,7 @@ We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shap
 <hr>
 </details>
 
-
 ## Point Cloud
-### 2018
-<details>
- <summary><b>PointGrid: A Deep Network for 3D Shape Understanding</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointGrid.md">[Paper Note]</a></summary>
-<hr>
- <p align="justify">
-Volumetric grid is widely used for 3D deep learning due to its regularity. However the use of relatively lower order local approximation functions such as piece-wise constant function (occupancy grid) or piece-wise linear function (distance field) to approximate 3D shape means that it needs a very high-resolution grid to represent finer geometry details, which could be memory and computationally inefficient. In this work, we propose the PointGrid, a 3D convolutional network that incorporates a constant number of points within each grid cell thus allowing the network to learn higher order local approximation functions that could better represent the local geometry shape details. With experiments on popular shape recognition benchmarks, PointGrid demonstrates state-of-the-art performance over existing deep learning methods on both classification and segmentation.
-</p>
-<hr>
-</details>
-
 ### 2017
 <details>
  <summary><b>PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointNet.md">[Paper Note]</a></summary>
