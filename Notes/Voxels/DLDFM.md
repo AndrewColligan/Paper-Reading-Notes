@@ -27,8 +27,11 @@
 - 3D-GradCAM (3D-CNN based gradient-weighted class activation mapping) is used to provide visually display the difficult-to-manufacture features outputed by the network.
 - GPU-accelerated methods for converting CAD models to volume representations (voxelisation augmented with surface normals).
 
+<p align="center">
+	<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0167839618300384-gr002.jpg">
+</p>
+
 ## Formulation / Solver / Implementation
-![Image of DFM rules](https://ars.els-cdn.com/content/image/1-s2.0-S0167839618300384-gr002.jpg "Image of DFM rules")
 - DLDFM (Deep Learning Design For Manufacturing) framework, used the following DFM rules to create synthetic dataset:
 	1. **Depth-to-diameter ratio**: The depth-to-diameter ratio should be less than 5.0 for the machinability of the hole.
 	2. **Through holes**: Since a through hole can be drilled from both directions, the depth-to-diamter ratio for a through hole should be less than 10.0 to be manufacturable.
@@ -61,8 +64,9 @@
 
 ---
 **DLDFM detection of manufacturability**
-
-![Image of DLDFM 3D-GradCAM](https://ars.els-cdn.com/content/image/1-s2.0-S0167839618300384-gr009.jpg "Image of DLDFM 3D-GradCAM")
+<p align="center">
+	<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0167839618300384-gr009.jpg" width = 500>
+</p>
 
 # Resource
 ## Project page
