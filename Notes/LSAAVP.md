@@ -1,73 +1,72 @@
 # Basic info
-- Title: End-to-End Deep Learning for Person Search
-- Author: Tong Xiao, Shuang Li, Bochao Wang, Liang Lin and Xiaogang Wang
-- Affiliation: The Chinese University of Hong Kong, and Sun Yat-Sen University
-- Publication status: arXiv:1604.01850v1
-- Short name: E2EPersonSearch
-- Year: 2018
+- Title: Learning Shape Abstractions by Assembling Volumetric Primitives
+- Author: Shubham Tulsiani, Hao Su, Leonidas J. Guibas, Alexei A. Efros, Jitendra Malik
+- Affiliation: University of California Berkeley & Stanford University
+- Publication status: CVPR
+- Short name: LSAAVP
+- Year: 2017
 
 # Score
-- Idea: 3
+- Idea: 4
 - Usability: 4
-- Presentation: 4
+- Presentation:4 
 - Overall: 4
 
 # Contributions
 ## Problem addressed / Motivation
-- real-world scenarios where the annotations of pedestrian bounding boxes are unavailable and the target person needs to be found from whole images
+- *Parsimony of description* where an object can be described by relatively few generalised cylinders, each of which in turn require only a few parameters.
+- Method of describing complex structures in terms of simpler underlying structures.
+
+<p align="center", width=400>
+    <img src="https://camo.githubusercontent.com/453106e3025f7bc61ca00629185699ac6e502430/68747470733a2f2f736875626874756c732e6769746875622e696f2f766f6c756d65747269635072696d6974697665732f7265736f75726365732f696d616765732f7465617365722e706e67">
+</p>
 
 ## Idea / Observation / Contribution
-- Investigate how to localize and match query persons from the scene images without relying on the annotations of candidate boxes
-- Propose an end-to-end deep learning framework to jointly handle both tasks
-- A large-scale and scene-diversified person search dataset, which contains 18,184 images, 8,432 persons, and 99,809 annotated bounding boxes.
-- Joint optimization brings multiple benefits ... We share a fully convolutional neural network to extract features for detecting pedestrians and producing discriminative re-id features.
+- Explain objects with volumetric primitives using modern tools of unsupervised learning and convolutional neural networks (CNNs).
+- The simpliest primitive is chosen: **rigidly transformed cuboids**.
+- Show how deep networks can be trained to assemble arbitrary 3D objects out of them (at some level of approximation).
+- Using 3D data as primitives is *parsimonious*, with a small number of parameters compared to voxels & meshes.
 
 ## Formulation / Solver / Implementation
-- Utilize VGG16 model for convolutional layers (conv1 and conv5) in FCN.
-- Follow faster rcnn for the pedestrian proposal network
-- From pedestrian proposals, we apply three fully connection layers (fc6-8) to generate final feature for person re-id
+- Approach outputs a consistent indexed set of primitives.
+- Similar to shape and scene based methods, their framework can automatically discovers consistent components and understand the structure of the data, by virtue of learning to generate parimonious explanations.
+- Similar to deep generative models like GANs, their work uses similar principles of learning component based explanations of complex shapes where the components are interpretable simple 3D primitives.
+- No direct supervision, but the quality of the predicted primitive configuration is checked by matching the assembled object to the target object using *distance fields*.
+- Allows variable number of primitves by not only predicting the shape and transformation of each primitive, but also the probability of its existence.
+- CNN
 
 ## Useful info / tips
-- If the softmax target is very sparse and the minibatch contains only a few label classes, the gradients would be biased on these classes at each SGD iteration
-- It is observed that detectors greatly affect the person search performance of baseline method and there is still a big gap between using the ground truth bounding boxes and the automatically detected ones.
+
 
 # Evaluation
 ## Dataset
-- Own dataset (E2E Person Search)
-- There are two parts in the dataset: street snaps and movies.
-- Low-resolution subset and occlusion subset
+- ShapeNet - airplane and chair categories.
+- 100 models of four-legged animals.
+- Shape COSEG
 
 ## Metrics
-- designed different evaluation protocols by setting the gallery size to 50, 100, 500, 1, 000, 2, 000, and 4, 000
-- meanAveraged Precision (mAP): A candidate window is considered as positive if its overlap with the ground truth is larger than 0.5
-- top-k matching rate on bounding boxes: A matching is counted if a bounding box among the top-k predicted boxes overlaps with the ground truth larger than the threshold
+- Each primitive is coded as a tuple (z: shape in a canonical frame, q: rotation, t: translation).
+- Two loses that are optimised together, to ensure that the assembled shape tries to be maximally consistent with the target object:
+    1. **Converage Loss**: tries to enforce that the object is subsumed by the predicted assembled shape.
+    2. **Consistency Loss**: enforces the other direction that the object subsumes the predicted shape.
+- For the variable number of primitives, the primitive shape *z<sub>m</sub>* is factored into two components - (*z<sup>s</sup><sub>m</sub>, z<sup>e</sup><sub>m</sub>*). Here *z<sup>s</sup><sub>m</sub>* represents the primitive dimensions (e.g. cuboid, height, width, depth) as before and *z<sup>e</sup><sub>m</sub>* is a binary variable which denotes if the primitive actaully exists.
+- Gradients computed using **reinforce** algorithm, which gives positive feedback if the overall error is low (reward is high). A small *parsimony reward* is given reward fewer predicted primitives.
+- Voxel grid of size: 32<sup>3</sup>.
+ 
 
 ## Results
-- Baseline detector: ACF + Deep detector
-- Baseline re-id methods: BoW with cosine distance, DenseSift+ColorHist with Euclidean and KISSME distance metric, IDNet
+- Mean accuracy: 89.0%.
 
 # Resource
-## Project page
-http://www.ee.cuhk.edu.hk/~xgwang/PS/dataset.html
+## Paper
+https://arxiv.org/abs/1612.00404
 
 ## Source code
-https://github.com/ShuangLI59/person_search
+https://github.com/shubhtuls/volumetricPrimitives
 
-## Dataset
-Need to send request
-https://drive.google.com/open?id=0B-GOvBat1maOVUE3WmNNUVRGamc
+## Build upon
+- Wider catalogue if basic parametrised primitives.
+- Use prediction of variable number of primitives for CSGNet.
 
-## Other paper reading notes
-
-## Others
-
-# Questions
-- How to perform re-id algorithm in current framework?
-
-# Build upon
-- Performance is low on low-resolution images
-- Extend to video data (plus tracking)
-
-# Paper connections
-- Faster RCNN
-
+## Paper connections
+- CNN
