@@ -22,7 +22,9 @@
 - Network that directly takes unorderd point clouds as input and outputs either class labels for entire input or per point segment/part labels for each point of the input.
 - Network learns a set of optimisation functions that select interesting or informative points of the point cloud and encode the reason for their selection.
 
-<img src="https://github.com/charlesq34/pointnet/raw/master/doc/teaser.png" alt="PointNet" width="600" align="middle">
+<p align="center">
+  <img src="https://github.com/charlesq34/pointnet/raw/master/doc/teaser.png" alt="PointNet" width="600" align="middle">
+</p>
 
 ## Formulation / Solver / Implementation
 - PointNet must respect the fact that a point cloud is just a set of points and therefore invariant to permutations of its members, necessitating certain symmetrisations in the net computation.
