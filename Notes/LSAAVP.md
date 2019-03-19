@@ -35,9 +35,6 @@
 - Allows variable number of primitves by not only predicting the shape and transformation of each primitive, but also the probability of its existence.
 - CNN
 
-## Useful info / tips
-
-
 # Evaluation
 ## Dataset
 - ShapeNet - airplane and chair categories.
