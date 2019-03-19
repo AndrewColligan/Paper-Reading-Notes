@@ -17,8 +17,8 @@
 - *Parsimony of description* where an object can be described by relatively few generalised cylinders, each of which in turn require only a few parameters.
 - Method of describing complex structures in terms of simpler underlying structures.
 
-<p align="center", width=400>
-    <img src="https://camo.githubusercontent.com/453106e3025f7bc61ca00629185699ac6e502430/68747470733a2f2f736875626874756c732e6769746875622e696f2f766f6c756d65747269635072696d6974697665732f7265736f75726365732f696d616765732f7465617365722e706e67">
+<p align="center">
+    <img src="https://camo.githubusercontent.com/453106e3025f7bc61ca00629185699ac6e502430/68747470733a2f2f736875626874756c732e6769746875622e696f2f766f6c756d65747269635072696d6974697665732f7265736f75726365732f696d616765732f7465617365722e706e67" width=800>
 </p>
 
 ## Idea / Observation / Contribution
