@@ -15,9 +15,11 @@
 # Contributions
 ## Problem addressed / Motivation
 - Voxels and distance fields are computationally inefficient for representing finer geometry details due to requiring a very high resolution grid.
+
 <p align="center">
   <img src="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Imgs/pointgrid.png" width = 500>
 </p>
+
 ## Idea / Observation / Contribution
 - Hybrid of point cloud and grid techniques, that scales better than volumetric grid and avoid information loss at the same time.
 - A 3D convolutional network that incorporates a constant number of points within each grid cell thus allowing the network to learn higher order local approximation functions.
