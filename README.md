@@ -2,9 +2,9 @@
 Academic papers organised into their appropiate categories.
 
 **Machine Learning** are organised by their shape format:
-- [Geodesic](#geodesic)
 - [Graph](#graph)
 - [Hybrid](#hybrid)
+- [Manifolds](#manifolds)
 - [Mutli-View](#multi-view)
 - [Octree](#octree)
 - [Point Cloud](#point-cloud)
@@ -42,6 +42,18 @@ High-quality 3D object recognition is an important component of many vision and 
   </p>
 <hr>
 </details>
+
+## Manifolds
+### 2015
+<details>
+ <summary><b>Geodesic Convolutional Neural Networks on Riemannian Manifolds</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Manifolds/GCNN.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Feature descriptors play a crucial role in a wide range of geometry analysis and processing applications, including shape correspondence, retrieval, and segmentation. In this paper, we introduce Geodesic Convolutional Neural Networks (GCNN), a generalization of the convolutional networks (CNN) paradigm to non-Euclidean manifolds. Our construction is based on a local geodesic system of polar coordinates to extract "patches", which are then passed through a cascade of filters and linear and non-linear operators. The coefficients of the filters and linear combination weights are optimization variables that are learned to minimize a task-specific cost function. We use GCNN to learn invariant shape features, allowing to achieve state-of-the-art performance in problems such as shape description, retrieval, and correspondence.
+  </p>
+<hr>
+</details>
+
 
 ## Multi-View
 ### 2015
