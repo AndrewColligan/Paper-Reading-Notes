@@ -167,4 +167,5 @@ We present a novel feature identification framework to recognize difficult-to-ma
 </details>
       
 <hr>
-**Count**: 15
+
+<sub><sup>Paper Count: 15</sup></sub>
