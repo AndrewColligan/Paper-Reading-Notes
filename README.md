@@ -24,6 +24,15 @@ Volumetric grid is widely used for 3D deep learning due to its regularity. Howev
 <hr>
 </details>
 
+<details>
+ <summary><b>NormalNet: A voxel-based CNN for 3D object classification and retrieval</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/NormalNet.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+A common approach to tackle 3D object recognition tasks is to project 3D data to multiple 2D images. Projection only captures the outline of the object, and discards the internal information that may be crucial for the recognition. In this paper, we stay in 3D and concentrate on tapping the potential of 3D representations. We present NormalNet, a voxel-based convolutional neural network (CNN) designed for 3D object recognition. The network uses normal vectors of the object surfaces as input, which demonstrate stronger discrimination capability than binary voxels. We propose a reflection–convolution–concatenation (RCC) module to realize the conv layers, which extracts distinguishable features for 3D vision tasks while reducing the number of parameters significantly. We further improve the performance of NormalNet by combining two networks, which take normal vectors and voxels as input respectively. We carry out a series of experiments that validate the design of the network and achieve competitive performance in 3D object classification and retrieval tasks.
+</p>
+<hr>
+</details>
+
 ### 2016
 <details>
  <summary><b>FusionNet: 3D Object Classification Using Multiple Data Representation</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/FusionNet.md">[Paper Note]</a></summary>
