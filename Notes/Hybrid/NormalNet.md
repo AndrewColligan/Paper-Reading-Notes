@@ -11,10 +11,10 @@
 - Year: 2019
 
 # Score
-- Idea: 
-- Usability: 
-- Presentation: 
-- Overall: 
+- Idea: 3
+- Usability: 4
+- Presentation: 4
+- Overall: 4
                                                                                                                 
 # Contributions
 ## Problem addressed / Motivation
