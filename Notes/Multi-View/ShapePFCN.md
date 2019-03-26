@@ -7,10 +7,10 @@
 - Year: 2017
 
 # Score
-- Idea: 
-- Usability: 
-- Presentation: 
-- Overall: 
+- Idea: 3
+- Usability: 2
+- Presentation: 4
+- Overall: 3
 
 # Contributions
 ## Problem addressed / Motivation
@@ -27,7 +27,11 @@
 </p>
 
 ## Formulation / Solver / Implementation
-- Architecture 
+- Architecture takes as input a set of images from multiple views optimised for maximal surface coverage.
+- Extracts part-based confidence maps through pre-trained image processing layers.
+- Combines and projects these maps onto the surface through a projection layer.
+- Incorporates a surface-based Condition Random Field (CRF) that favours coherent labeling of the input surface.
+- Whole network is trained end-to-end.
 
 ## Useful info / tips
 - View must be selected such that they together cover the shape surface as much as possible and minimise occlusions.
@@ -37,13 +41,18 @@
 
 # Evaluation
 ## Dataset
-
+- ShapeNetCore: 17,773 segmented models, 16 categories.
+- Labeled-PSB (L-PSB): 380 segmented models, 19 categories.
+- COSEG: 190 segmented models, 8 categories.
 
 ## Metrics
 - Input is a raw polygon mesh.
+- Shape rendered as shaded, greyscale 512x512 images and depth images.
+- 50% training/testing split.
 
 ## Results
-
+- ShapeNetCore: there was an improvement of 5.4% on the state-of-the-art to an accuracy of **87.5%**.
+- L-PSB & COSEG: **92.6%** accuracy.
 
 # Resource
 ## Paper
@@ -55,17 +64,11 @@ https://people.cs.umass.edu/~kalo/papers/shapepfcn/
 ## Source code
 https://github.com/kalov/ShapePFCN
 
-## Dataset
-
-## Other paper reading notes
-
-## Others
-
-## Questions
-
-
 ## Build upon
-
+- Currently our method uses a simple pairwise term based on surface distances and angles between surface normals. As a result, the segmentations can become noisy and not aligned with strong underlying mesh boundaries. Extracting robust boundaries through a learned module would be beneficial to our method.
+- Our method currently deals with single-level, non-hierarchical segmentations. Further segmenting objects into fine-grained parts (e.g. segmenting motorbikes into sub-frame components) in a hierarchical manner would be useful in several vision and graphics applications.
+- Another possibility for future work is to investigate different types of input to our network. The input images we used represent surface depth and normals relative to view direction. 
+- Another possibility is to consider the HHA encoding or even raw position data. However, these encodings assume a consistent gravity direction or alignment for input 3D shapes. Although in a few repositories (e.g. Trimble Warehouse) the majority of 3D models have consistent upright orientation, this does not hold for all 3D models, and especially for other online repositories whose shapes are oriented along different, random axes.
 
 ## Paper connections
 - Multi-view
@@ -73,3 +76,5 @@ https://github.com/kalov/ShapePFCN
 - CRF
 
 ## Software & Hardware
+- C++
+- Caffe
