@@ -36,23 +36,58 @@
 	1. **Binary occupancy grid** - in this model, each voxel is assumed to have a binary state, occupied or unoccupied.
 	2. **Density grid** - in this model, each voxel is assumed to have a continuous density, corresponding to the probability the voxel would block a sensor beam.
 	3. **Hit grid** - this model only consider hits, and ignores the difference between unknown and free space. This model discards some potentially valuable information, however it does not require raytracing, which is useful in computationally constrained situations.
+- At training time, each input instance is rotated 360&deg;/n intervals aroung the *z* axis.
+- At test time, they pool the activations of the output layer over all *n* copies.
 
 ## Useful info / tips
 - Volumetric representation is richer than point clouds, as it distinguishes free space from unknown space.
 - Feature based point clouds often require spatial neighbourhood queries, which can quickly become intractable with large numbers of points.
 
-
 # Evaluation
 ## Dataset
-
+- LiDAR: Sydney Urban Objects.
+- CAD data: ModelNet.
+- RGBD data: NYUv2.
 
 ## Metrics
 - 32<sup>3</sup> voxel grid.
 - Two voxel resolution methods: 
 	1. For LiDAR dataset, a fixed spatial resolution is used e.g. voxels of (0.1m)<sup>3</sup>. This maintains the information given by the relative scale of the object
 	2. The resolution is chosen so the object of interest occupies a subvolume of 24 x 24 x 24 voxels. This avoids the loss of the shape information when the voxels are too small (so that the object is larger than the grid) or when th voxels are too large (so that details are lost by aliasing).
+- Voxel grid is subtracted by 0.5 and multiplied by 2, so that the input is in the rang (-1, 1).
+- Implement a multiresolution VoxNet, where two networks with an identical architectures, each receiving occupancy grids at different resolutions: (0.1m)<sup>3</sup> and (0.2m)<sup>3</sup>. Connected by a softmax output layer.
 
 ## Results
+
+#### Effect of Occupancy Grids
+
+| Occupancy | Sydney F1 | NYUv2 Acc |
+| --------- | --------- | --------- |
+| Density   | **0.72**  | **0.71**  |
+| Binary    | 0.71      | 0.69      |
+| Hit       | 0.70      | 0.70      |
+
+#### Sydney Object Dataset
+
+| Method    | Avg F1    |
+| --------- | --------- |
+| UFL+SVM   | 0.67      |
+| GFH+SVM   | 0.71      |
+| MR-VoxNet | **0.73**  |
+
+#### ModelNet Dataset
+
+| Dataset    | ShapeNet  | VoxNet    |
+| ---------- | --------- | --------- |
+| ModelNet10 | 0.84      | **0.92**  |
+| ModelNet40 | 0.77      | **0.83**  |
+
+#### NYUv2 (Avg Acc)
+
+| Dataset         | ShapeNet  | VoxNet    | VoxNet Hit |
+| --------------- | --------- | --------- | ---------- |
+| NYU             | 0.58      | **0.71**  | 0.70       |
+| ModelNet10->NYU | 0.77      | **0.83**  | 0.25       |
 
 
 # Resource
@@ -65,8 +100,16 @@ http://dimatura.net/research/voxnet/
 ## Source code
 https://github.com/dimatura/voxnet
 
-# Build upon
+## Build upon
+- Integration of data from other modalities (e.g. cameras).
+- Application of method to other tasks such as semantic segmentation.
 
-
-# Key Words
+## Key Words
 - Voxel
+- CNN
+
+## Software & Hardware
+- C++
+- Python
+- Lasagne library
+- Tesla K40 GPU (training: 6 to 12 hours)
