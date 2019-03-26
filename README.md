@@ -79,6 +79,15 @@ A longstanding question in computer vision concerns the representation of 3D sha
 ## Octree
 ### 2017
 <details>
+ <summary><b>OctNet: Learning Deep 3D Representations at High Resolutions</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Octree/OctNet.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+We present OctNet, a representation for deep learning with sparse 3D data. In contrast to existing models, our representation enables 3D convolutional networks which are both deep and high resolution. Towards this goal, we exploit the sparsity in the input data to hierarchically partition the space using a set of unbalanced octrees where each leaf node stores a pooled feature representation. This allows to focus memory allocation and computation to the relevant dense regions and enables deeper networks without compromising resolution. We demonstrate the utility of our OctNet representation by analyzing the impact of resolution on several 3D tasks including 3D object classification, orientation estimation and point cloud labeling.
+  </p>
+<hr>
+</details>
+
+<details>
  <summary><b>O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Octree/O-CNN.md">[Paper Note]</a></summary>
 <hr>
  <p align="justify">
@@ -178,4 +187,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 15</sup></sub>
+<sub><sup>Paper Count: 17</sup></sub>
