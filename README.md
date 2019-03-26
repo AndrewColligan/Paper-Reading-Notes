@@ -161,7 +161,7 @@ We present a novel feature identification framework to recognize difficult-to-ma
  <summary><b>VoxNet</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/VoxNet.md">[Paper Note]</a></summary>
  <hr>
  <p align="justify">
-
+Robust object recognition is a crucial skill for robots operating autonomously in real world environments. Range sensors such as LiDAR and RGBD cameras are increasingly found in modern robotic systems, providing a rich source of 3D information that can aid in this task. However, many current systems do not fully utilize this information and have trouble efficiently dealing with large amounts of point cloud data. In this paper, we propose VoxNet, an architecture to tackle this problem by integrating a volumetric Occupancy Grid representation with a supervised 3D Convolutional Neural Network (3D CNN). We evaluate our approach on publicly available benchmarks using LiDAR, RGBD, and CAD data. VoxNet achieves accuracy beyond the state of the art while labeling hundreds of instances per second.
  <hr>
  </p>
 </details>
