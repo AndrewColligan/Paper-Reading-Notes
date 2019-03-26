@@ -58,7 +58,7 @@ Feature descriptors play a crucial role in a wide range of geometry analysis and
 ## Multi-View
 ### 2017
 <details>
- <summary><b>3D Shape Segmentation with Projective Convolutional Networks</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Multi-View/Projective-CN.md">[Paper Note]</a></summary>
+ <summary><b>3D Shape Segmentation with Projective Convolutional Networks</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Multi-View/ShapePFCN.md">[Paper Note]</a></summary>
 <hr>
  <p align="justify">
 This paper introduces a deep architecture for segmenting 3D objects into their labeled semantic parts. Our architecture combines image-based Fully Convolutional Networks (FCNs) and surface-based Conditional Random Fields (CRFs) to yield coherent segmentations of 3D shapes. The image-based FCNs are used for efficient view-based reasoning about 3D object parts. Through a special projection layer, FCN outputs are effectively aggregated across multiple views and scales, then are projected onto the 3D object surfaces. Finally, a surface-based CRF combines the projected outputs with geometric consistency cues to yield coherent segmentations. The whole architecture (multi-view FCNs and CRF) is trained end-to-end. Our approach significantly outperforms the existing stateof-the-art methods in the currently largest segmentation benchmark (ShapeNet). Finally, we demonstrate promising segmentation results on noisy 3D shapes acquired from consumer-grade depth cameras.
