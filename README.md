@@ -99,6 +99,15 @@ We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shap
 ## Point Cloud
 ### 2017
 <details>
+ <summary><b>PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointNet%2B%2B.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Few prior works study deep learning on point sets. PointNet is a pioneer in this direction. However, by design PointNet does not capture local structures induced by the metric space points live in, limiting its ability to recognize fine-grained patterns and generalizability to complex scenes. In this work, we introduce a hierarchical neural network that applies PointNet recursively on a nested partitioning of the input point set. By exploiting metric space distances, our network is able to learn local features with increasing contextual scales. With further observation that point sets are usually sampled with varying densities, which results in greatly decreased performance for networks trained on uniform densities, we propose novel set learning layers to adaptively combine features from multiple scales. Experiments show that our network called PointNet++ is able to learn deep point set features efficiently and robustly. In particular, results significantly better than state-of-the-art have been obtained on challenging benchmarks of 3D point clouds.
+</p>
+<hr>
+</details>
+
+<details>
  <summary><b>PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointNet.md">[Paper Note]</a></summary>
 <hr>
  <p align="justify">
@@ -187,4 +196,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 17</sup></sub>
+<sub><sup>Paper Count: 18</sup></sub>
