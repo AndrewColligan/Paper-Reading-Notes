@@ -7,10 +7,10 @@
 - Year: 2017
 
 # Score
-- Idea: 
-- Usability: 
-- Presentation: 
-- Overall: 
+- Idea: 5
+- Usability: 5
+- Presentation: 5
+- Overall: 5
 
 # Contributions
 ## Problem addressed / Motivation
@@ -30,20 +30,41 @@
 </p>
 
 ## Formulation / Solver / Implementation
-
+- The architecture is composed of multiple components that aggregate local information and pass it along to the next step.
+- Since point clouds are unordered, the aggregation steps cannot depend on the order of the input.
+- Therefore, a *symmetric* function (f(x,y,z) = max(x,y,z) is used, where for each tiny group of points, after a few initial transformations there is a max operation that combines everything.
+- There are a number of stages in the architecture, but each part has a well-defined goal.
+- Starting from the entire point cloud, points are grouped into some number of clusters, and condensed into a single point that carries new information. In addition to its *d* spatial coordinates, each point also carries *C* pieces of information.
+- This process continues, taking the new points and grouping them into more clusters.
+- Depending on the problem, the process then reverses itself and tries to build back the original structure.
+- Especially when we would like to classify each original point, the network has a series of interpolationg steps to go from one point to a group.
+- These steps all rely on utilising the distance function.
+- The interpolation step uses an inverse distance weighted average.
 
 ## Useful info / tips
 - The partitioning of the point set has to produce common structures across partitions, so weights of local feature learners can be shared, as in the convolutional setting.
 
 # Evaluation
 ## Dataset
-
+- ModelNet40
+- MNIST
+- SHREC15
+- ScanNet
 
 ## Metrics
 
 
 ## Results
 
+### ModelNet40 Shape Classification
+
+| Method                   | Input | Accuracy (%) |
+| ------------------------ | ----- | ------------ |
+| Subvolume                | vox   | 89.2         |
+| MVCNN                    | img   | 90.1         |
+| PointNet                 | pc    | 87.2         |
+| PointNet++               | pc    | 90.7         |
+| PointNet++ (with normal) | pc    | **91.9**     |
 
 # Resource
 ## Paper
@@ -54,15 +75,6 @@ http://stanford.edu/~rqi/pointnet2/
 
 ## Source code
 https://github.com/charlesq34/pointnet2
-
-## Dataset
-
-
-## Other paper reading notes
-
-
-## Others
-
 
 ## Questions
 
