@@ -14,8 +14,8 @@
 
 # Contributions
 ## Problem addressed / Motivation
-- Point clouds are captured by 3D scanners such as from autonomous vehicles.
-- PointNet does not capture local structures induced by the metric space, points lives in, limiting its ability to recognise fine-grained patterns and generalise to complex scenes.
+- Point clouds are captured by 3D scanners, such as for autonomous vehicles.
+- PointNet does not capture local structures induced by the metric space, where the points lives in. This limits its ability to recognise fine-grained patterns and generalise to complex scenes.
 - How to generate the partitioning of the point set?
 - How to abstract sets of points or local features through a local feature learner?
 
@@ -32,7 +32,7 @@
 ## Formulation / Solver / Implementation
 - The architecture is composed of multiple components that aggregate local information and pass it along to the next step.
 - Since point clouds are unordered, the aggregation steps cannot depend on the order of the input.
-- Therefore, a *symmetric* function (f(x,y,z) = max(x,y,z) is used, where for each tiny group of points, after a few initial transformations there is a max operation that combines everything.
+- Therefore, a *symmetric* function (*f(x,y,z) = max(x,y,z)*) is used, where for each tiny group of points, after a few initial transformations there is a max operation that combines everything.
 - There are a number of stages in the architecture, but each part has a well-defined goal.
 - Starting from the entire point cloud, points are grouped into some number of clusters, and condensed into a single point that carries new information. In addition to its *d* spatial coordinates, each point also carries *C* pieces of information.
 - This process continues, taking the new points and grouping them into more clusters.
@@ -52,7 +52,8 @@
 - ScanNet
 
 ## Metrics
-
+- Performed on Euclidean and non-Euclidean metric space.
+- Ball query used instead of kNN for grouping layer.
 
 ## Results
 
@@ -76,14 +77,13 @@ http://stanford.edu/~rqi/pointnet2/
 ## Source code
 https://github.com/charlesq34/pointnet2
 
-## Questions
-
-
 ## Build upon
-
+- Accelerate inference speed of the network especially for multi-scale grouping (MSG)  and multi-resolution grouping (MRG) layers by sharing more computation in each local regions.
+- Find applications in higher dimensional metric spaces where CNN based method would be computationally unfeasible while this method would scale well.
 
 ## Paper connections
-
+- Point Cloud
+- Non-CNN based
 
 ## Software & Hardware
 
