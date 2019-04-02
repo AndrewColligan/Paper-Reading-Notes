@@ -13,6 +13,7 @@ Revelant conferences to `Application of Machine Learning for Feature Recognition
 | [CVPR](#CVPR)             | Long Beach    | 16/06/19      | 16/11/18      |
 | [ICML](#ICML)             | Long Beach    | 10/06/19      | 18/01/19      |
 | [AAAI](#AAAI)             | Honolulu      | 27/01/19      | 30/08/18      |
+| [NIPS](#NIPS)             | Vancouver     | 08/12/19      | 16/05/19      |
 
 ## 2020
 
@@ -116,7 +117,10 @@ The ASME 2019 International Design Engineering Technical Conferences & Computers
 
 ---
 
-![CVPR Logo](http://cvpr2019.thecvf.com/images/CVPRLogo.jpg "CVPR Logo")
+</br>
+<p align="left">
+    <img src="http://cvpr2018.thecvf.com/images/cvpr18logo_3.jpg" width =100>
+</p>
 
 ## CVPR 
 CVPR is the premier annual computer vision event comprising the main conference and several co-located workshops and short courses. With its high quality and low cost, it provides an exceptional value for students, academics and industry researchers.
@@ -174,3 +178,19 @@ The purpose of the AAAI conference series is to promote research in artificial i
 - **Date** - 27/01/19 - 01/02/19
 - **Location** - Honolulu, Hawaii, USA
 - **Deadline** - (Abstract - 30/08/18) (Paper - 05/09/18)
+
+---
+<p align="left">
+    <img src="https://nips.cc/static/admin/img/NeurIPS-logo.svg" width=100>
+</p>
+
+## NIPS
+The Thirty-third Annual Conference on Neural Information Processing Systems (NeurIPS) is a multi-track machine learning and computational neuroscience conference that includes invited talks, demonstrations, symposia and oral and poster presentations of refereed papers. Following the conference, there are workshops which provide a less formal setting.
+
+- **Title** - Neural Information Processing Systems
+- **Area** - Computer Science
+
+
+- **Date** - 08/12/19 - 14/12/19
+- **Location** - Vancouver, Canada
+- **Deadline** - (Abstract - 16/05/19) (Paper - 23/05/19)
