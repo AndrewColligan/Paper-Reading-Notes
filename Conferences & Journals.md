@@ -6,11 +6,14 @@ Revelant conferences to `Application of Machine Learning for Feature Recognition
 
 | Conferences               | Location      | Start Date    | 1st Deadline  |
 | -------------             | ------------- | ------------- | ------------- |
-| [NAFEMS](#NAFEMS)         | xxxxxxxx      | xxxxxxx       | xxxxxxx       |
+| [NAFEMS](#NAFEMS)         | xxxxxxxx      | xxxxxxx       | xxxxxxxx      |
 | [SIMULTECH](#SIMULTECH)   | Prague        | 29/07/19      | 28/02/19      |
 | [IntelliSys](#IntelliSys) | London        | 05/09/19      | 01/02/19      |
 | [IDETC-CIE](#IDETC-CIE)   | Anaheim       | 18/08/19      | 25/02/19      |
 | [CVPR](#CVPR)             | Long Beach    | 16/06/19      | 16/11/18      |
+| [ICCV](#ICCV)             | Seoul         | 29/10/19      | 15/03/19      |
+| [ECCV](#ECCV)             | Munich        | 08/09/18      | xxxxxxxx      |
+| [ICPRAM](#ICPRAM)         | Prague        | 19/02/19      | xxxxxxxx      |
 | [ICML](#ICML)             | Long Beach    | 10/06/19      | 18/01/19      |
 | [AAAI](#AAAI)             | Honolulu      | 27/01/19      | 30/08/18      |
 | [NIPS](#NIPS)             | Vancouver     | 08/12/19      | 16/05/19      |
@@ -117,7 +120,6 @@ The ASME 2019 International Design Engineering Technical Conferences & Computers
 
 ---
 
-</br>
 <p align="left">
     <img src="http://cvpr2018.thecvf.com/images/cvpr18logo_3.jpg" width =100>
 </p>
@@ -126,14 +128,13 @@ The ASME 2019 International Design Engineering Technical Conferences & Computers
 CVPR is the premier annual computer vision event comprising the main conference and several co-located workshops and short courses. With its high quality and low cost, it provides an exceptional value for students, academics and industry researchers.
 
 
-- **Title** - Conference on Computer Vision and Pattern Recognition
-- **Area** - Computer Science
-
+- **Title** - IEEE Conference on Computer Vision and Pattern Recognition CVPR
+- **Area** - Computer Vision & Pattern Recognition
+- **h5 Index** - 188
 
 - **Date** - 16/06/19 - 21/06/19
 - **Location** - Long Beach, CA, USA
 - **Deadline** - 16/11/18
-
 
 - **Future Date** - 13/06/20 - 19/06/20
 - **Future Location** - Seattle Washington, USA
@@ -141,6 +142,60 @@ CVPR is the premier annual computer vision event comprising the main conference 
 
 - **URL**
     - 2019: http://cvpr2019.thecvf.com/
+
+---
+
+<p align="left">
+    <img src="http://iccv2019.thecvf.com/images/ICCV19logo_main.png" width =200>
+</p>
+
+## ICCV
+ICCV is the premier international computer vision event comprising the main conference and several co-located workshops and tutorials. With its high quality and low cost, it provides an exceptional value for students, academics and industry researchers..
+
+
+- **Title** - IEEE International Conference on Computer Vision ICCV
+- **Area** - Computer Vision & Pattern Recognition
+- **h5 Index** - 124
+
+- **Date** - 29/10/19 - 01/11/19
+- **Location** - Seoul, South Korea
+- **Deadline** - (Paper Registration - 15/03/19) (Paper Submission - 22/03/19)
+
+- **URL**
+    - 2019: http://iccv2019.thecvf.com/submission/timeline
+
+---
+
+## ECCV
+ECCV, the European Conference on Computer Vision, is a biennial research conference with the proceedings published by Springer Science+Business Media. Similar to ICCV in scope and quality, it is held those years which ICCV is not. Like ICCV and CVPR, it is considered an important conference in computer vision, with an 'A' rating from the Australian Ranking of ICT Conferences and an 'A1' rating from the Brazilian ministry of education. The acceptance rate for ECCV 2010 was 24.4% posters and 3.3% oral presentations.
+
+- **Title** - European Conference on Computer Vision ECCV
+- **Area** - Computer Vision & Pattern Recognition
+- **h5 Index** - 104
+
+- **Date** - 08/09/18 - 14/09/18
+- **Location** - Munich, Germany
+- **Deadline** - (Paper Registration - ) (Paper Submission - )
+
+- **URL**
+    - 2018: https://eccv2018.org/
+
+---
+
+## ICPRAM
+The International Conference on Pattern Recognition Applications and Methods would like to become a major point of contact between researchers, engineers and practitioners on the areas of Pattern Recognition, both from theoretical and application perspectives.
+Contributions describing applications of Pattern Recognition techniques to real-world problems, interdisciplinary research, experimental and/or theoretical studies yielding new insights that advance Pattern Recognition methods are especially encouraged.
+
+- **Title** - International Conference on Pattern Recognition Applications and Methods ICPRAM
+- **Area** - Computer Vision & Pattern Recognition
+- **h5 Index** - 
+
+- **Date** - 22/02/20 - 22/02/20
+- **Location** - Valletta, Malta
+- **Deadline** - (Paper Submission - 04/10/18)
+
+- **URL**
+    - 2020: http://www.icpram.org/
 
 ---
 
@@ -197,3 +252,47 @@ The Thirty-third Annual Conference on Neural Information Processing Systems (Neu
 
 - **URL**
     - 2019: https://nips.cc/
+    
+---
+
+# Journals
+
+Revelant conferences to `Application of Machine Learning for Feature Recognition in 3D CAD models`:
+
+## 2019
+
+| Journal                                     | Impact Factor | 1st Deadline  |
+| ----------------------                      | ------------- | ------------- |
+| [TPAMI](#TPAMI)                             | 9.455         | xxxxxxx       |
+| [Pattern Recognition](#Pattern Recognition) | 3.962         | xxxxxxx       |
+
+---
+
+## TPAMI
+The IEEE Transactions on Pattern Analysis and Machine Intelligence publishes articles on all traditional areas of computer vision and image understanding, all traditional areas of pattern analysis and recognition, and selected areas of machine intelligence, with a particular emphasis on machine learning for pattern analysis. Areas such as techniques for visual search, document and handwriting analysis, medical image analysis, video and image sequence analysis, content-based retrieval of image and video, face and gesture recognition and relevant specialized hardware and/or software architectures are also covered.
+
+- **Title** - IEEE Transactions on Pattern Analysis and Machine Intelligence PAMI
+- **Area** - Computer Vision & Pattern Recognition
+
+- **Impact Factor** - 9.455
+- **h5 Index** - 118
+- **Deadline** - 
+
+- **URL**
+    - https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34
+    
+---
+    
+## Pattern Recognition
+Pattern Recognition is a mature but exciting and fast developing field, which underpins developments in cognate fields such as computer vision, image processing, text and document analysis and neural networks. It is closely akin to machine learning, and also finds applications in fast emerging areas such as biometrics, bioinformatics, multimedia data analysis and most recently data science. The journal Pattern Recognition was established some 50 years ago, as the field emerged in the early years of computer science. Over the intervening years it has expanded considerably.
+
+The journal accepts papers making original contributions to the theory, methodology and application of pattern recognition in any area, provided that the context of the work is both clearly explained and grounded in the pattern recognition literature. Papers whos primary concern falls outside the pattern recognition domain and which report routine applications of it using existing or well known methods, should be directed elsewhere. The publication policy is to publish (1) new original articles that have been appropriately reviewed by competent scientific people, (2) reviews of developments in the field, and (3) pedagogical papers covering specific areas of interest in pattern recognition. Various special issues will be organized from time to time on current topics of interest to Pattern Recognition. Submitted papers should be single column, double spaced, no less than 20 and no more than 35 (40 for a review) pages long, with numbered pages.
+
+- **Title** - Pattern Recognition
+- **Area** - Computer Vision & Pattern Recognition
+
+- **Impact Factor** - 3.962
+- **h5 Index** - 74 
+
+- **URL**
+    - https://www.journals.elsevier.com/pattern-recognition
