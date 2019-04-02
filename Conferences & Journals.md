@@ -25,6 +25,7 @@ Revelant conferences to `Application of Machine Learning for Feature Recognition
 | [IntelliSys](#IntelliSys) | London        | Sept 2020     |
 | [CVPR](#CVPR)             | Seattle       | 13/06/20      |
 | [ICML](#ICML)             | Vienna        | 12/07/20      |
+| [ICPRAM](#ICPRAM)         | Valletta      | 22/02/20      |
 
 
 ---
@@ -192,7 +193,7 @@ Contributions describing applications of Pattern Recognition techniques to real-
 
 - **Date** - 22/02/20 - 22/02/20
 - **Location** - Valletta, Malta
-- **Deadline** - (Paper Submission - 04/10/18)
+- **Deadline** - (Paper Submission - 04/10/19)
 
 - **URL**
     - 2020: http://www.icpram.org/
@@ -286,7 +287,7 @@ The IEEE Transactions on Pattern Analysis and Machine Intelligence publishes art
 ## Pattern Recognition
 Pattern Recognition is a mature but exciting and fast developing field, which underpins developments in cognate fields such as computer vision, image processing, text and document analysis and neural networks. It is closely akin to machine learning, and also finds applications in fast emerging areas such as biometrics, bioinformatics, multimedia data analysis and most recently data science. The journal Pattern Recognition was established some 50 years ago, as the field emerged in the early years of computer science. Over the intervening years it has expanded considerably.
 
-The journal accepts papers making original contributions to the theory, methodology and application of pattern recognition in any area, provided that the context of the work is both clearly explained and grounded in the pattern recognition literature. Papers whos primary concern falls outside the pattern recognition domain and which report routine applications of it using existing or well known methods, should be directed elsewhere. The publication policy is to publish (1) new original articles that have been appropriately reviewed by competent scientific people, (2) reviews of developments in the field, and (3) pedagogical papers covering specific areas of interest in pattern recognition. Various special issues will be organized from time to time on current topics of interest to Pattern Recognition. Submitted papers should be single column, double spaced, no less than 20 and no more than 35 (40 for a review) pages long, with numbered pages.
+The journal accepts papers making original contributions to the theory, methodology and application of pattern recognition in any area, provided that the context of the work is both clearly explained and grounded in the pattern recognition literature. Papers whos primary concern falls outside the pattern recognition domain and which report routine applications of it using existing or well known methods, should be directed elsewhere. The publication policy is to publish new original articles that have been appropriately reviewed by competent scientific people, reviews of developments in the field, and pedagogical papers covering specific areas of interest in pattern recognition. Various special issues will be organized from time to time on current topics of interest to Pattern Recognition. Submitted papers should be single column, double spaced, no less than 20 and no more than 35 (40 for a review) pages long, with numbered pages.
 
 - **Title** - Pattern Recognition
 - **Area** - Computer Vision & Pattern Recognition
