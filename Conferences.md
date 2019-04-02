@@ -194,3 +194,6 @@ The Thirty-third Annual Conference on Neural Information Processing Systems (Neu
 - **Date** - 08/12/19 - 14/12/19
 - **Location** - Vancouver, Canada
 - **Deadline** - (Abstract - 16/05/19) (Paper - 23/05/19)
+
+- **URL**
+    - 2019: https://nips.cc/
