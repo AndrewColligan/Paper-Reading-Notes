@@ -44,6 +44,16 @@ High-quality 3D object recognition is an important component of many vision and 
 </details>
 
 ## Manifolds
+### 2019
+<details>
+ <summary><b>MeshNet: Mesh Neural Network for 3D Shape Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Manifolds/MeshNet.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Mesh is an important and powerful type of data for 3D shapes and widely studied in the field of computer vision and computer graphics. Regarding the task of 3D shape representation, there have been extensive research efforts concentrating on how to represent 3D shapes well using volumetric grid, multi-view and point cloud. However, there is little effort on using mesh data in recent years, due to the complexity and irregularity of mesh data. In this paper, we propose a mesh neural network, named MeshNet, to learn 3D shape representation from mesh data. In this method, face-unit and feature splitting are introduced, and a general architecture with available and effective blocks are proposed. In this way, MeshNet is able to solve the complexity and irregularity problem of mesh and conduct 3D shape representation well.We have applied the proposed MeshNet method in the applications of 3D shape classification and retrieval. Experimental results and comparisons with the state-of-the-art methods demonstrate that the proposed MeshNet can achieve satisfying 3D shape classification and retrieval performance, which indicates the  effectiveness of the proposed method on 3D shape representation.
+  </p>
+<hr>
+</details>
+
 ### 2015
 <details>
  <summary><b>Geodesic Convolutional Neural Networks on Riemannian Manifolds</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Manifolds/GCNN.md">[Paper Note]</a></summary>
@@ -186,7 +196,7 @@ We present a novel feature identification framework to recognize difficult-to-ma
 </details>
 
 <details>
- <summary><b>VoxNet</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/VoxNet.md">[Paper Note]</a></summary>
+ <summary><b>VoxNet: A 3D Convolutional Neural Network for Real-Time Object Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/VoxNet.md">[Paper Note]</a></summary>
  <hr>
  <p align="justify">
 Robust object recognition is a crucial skill for robots operating autonomously in real world environments. Range sensors such as LiDAR and RGBD cameras are increasingly found in modern robotic systems, providing a rich source of 3D information that can aid in this task. However, many current systems do not fully utilize this information and have trouble efficiently dealing with large amounts of point cloud data. In this paper, we propose VoxNet, an architecture to tackle this problem by integrating a volumetric Occupancy Grid representation with a supervised 3D Convolutional Neural Network (3D CNN). We evaluate our approach on publicly available benchmarks using LiDAR, RGBD, and CAD data. VoxNet achieves accuracy beyond the state of the art while labeling hundreds of instances per second.
@@ -196,4 +206,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 18</sup></sub>
+<sub><sup>Paper Count: 19</sup></sub>
