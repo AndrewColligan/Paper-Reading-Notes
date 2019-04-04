@@ -107,6 +107,17 @@ We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shap
 </details>
 
 ## Point Cloud
+
+### 2017
+<details>
+ <summary><b>PointCNN: Convolution On X-Transformed Points</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointCNN.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+We present a simple and general framework for feature learning from point clouds. The key to the success of CNNs is the convolution operator that is capable of leveraging spatially-local correlation in data represented densely in grids (e.g. images). However, point clouds are irregular and unordered, thus directly convolving kernels against features associated with the points will result in desertion of shape information and variance to point ordering. To address these problems, we propose to learn an X-transformation from the input points to simultaneously promote two causes: the first is the weighting of the input features associated with the points, and the second is the permutation of the points into a latent and potentially canonical order. Element-wise product and sum operations of the typical convolution operator are subsequently applied on the X-transformed features. The proposed method is a generalization of typical CNNs to feature learning from point clouds, thus we call it PointCNN. Experiments show that PointCNN achieves on par or better performance than state-of-the-art methods on multiple challenging benchmark datasets and tasks.
+</p>
+<hr>
+</details>
+
 ### 2017
 <details>
  <summary><b>PointNet++: Deep Hierarchical Feature Learning on Point Sets in a Metric Space</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Point-Cloud/PointNet%2B%2B.md">[Paper Note]</a></summary>
@@ -206,4 +217,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 19</sup></sub>
+<sub><sup>Paper Count: 20</sup></sub>
