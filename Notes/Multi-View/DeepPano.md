@@ -69,9 +69,9 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7273863
 https://github.com/bgshih/deeppano
 
 ## Build Upon
-- Limitation of apporach is similar to many previous view-based approaches, requiring the principle axes of 3D models, which, may fail to recognise the 3D models with serious non-rigid deformation.
+- Limitation of approach is similar to many previous view-based approaches, requiring the principle axes of 3D models, which may fail to recognise the 3D models with serious non-rigid deformation.
 - Some sequence prediction techniques might be used for exploring more contextual information, in order to further improve the performance of shape recognition, as a panoramic view can be considered as a map of feature sequence.
-- Estabilish robust alignments/correspondence between different panoramic views.
+- Establish robust alignments/correspondence between different panoramic views.
 
 ## Paper connections
 - Multi-view
