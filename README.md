@@ -196,6 +196,16 @@ We present a novel feature identification framework to recognize difficult-to-ma
  <hr>
 </details>
 
+### 2016
+<details>
+ <summary><b>Generative and Discriminative Voxel Modeling with Convolutional Neural Networks</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/VRN.md">[Paper Note]</a></summary>
+ <hr>
+ <p align="justify">
+When working with three-dimensional data, choice of representation is key. We explore voxel-based models, and present evidence for the viability of voxellated representations in applications including shape modeling and object classification. Our key contributions are methods for training voxel-based variational autoencoders, a user interface for exploring the latent space learned by the autoencoder, and a deep convolutional neural network architecture for object classification. We address challenges unique to voxel-based representations, and empirically evaluate our models on the ModelNet benchmark, where we demonstrate a 51.5% relative improvement in the state of the art for object classification.
+ <hr>
+ </p>
+</details>
+
 ### 2015
 <details>
  <summary><b>3D ShapeNets: A Deep Representation for Volumetric Shapes</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/ShapeNet.md">[Paper Note]</a></summary>
@@ -217,4 +227,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 20</sup></sub>
+<sub><sup>Paper Count: 21</sup></sub>
