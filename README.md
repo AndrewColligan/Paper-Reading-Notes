@@ -88,6 +88,15 @@ This paper introduces a deep architecture for segmenting 3D objects into their l
 
 ### 2015
 <details>
+ <summary><b>DeepPano: Deep Panoramic Representation for 3-D Shape Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Multi-View/DeepPano.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+This letter introduces a robust representation of 3-D shapes, named DeepPano, learned with deep convolutional neural networks (CNN). Firstly, each 3-D shape is converted into a panoramic view, namely a cylinder projection around its principle axis. Then, a variant of CNN is specifically designed for learning the deep representations directly from such views. Different from typical CNN, a row-wise max-pooling layer is inserted between the convolution and fully-connected layers, making the learned representations invariant to the rotation around a principle axis. Our approach achieves state-of-the-art retrieval/classification results on two large-scale 3-D model datasets (ModelNet-10 and ModelNet-40), outperforming typical methods by a large margin. 
+  </p>
+<hr>
+</details>
+
+<details>
  <summary><b>Multi-view Convolutional Neural Networks for 3D Shape Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Multi-View/MV-CNN.md">[Paper Note]</a></summary>
 <hr>
  <p align="justify">
@@ -246,4 +255,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 23</sup></sub>
+<sub><sup>Paper Count: 24</sup></sub>
