@@ -23,6 +23,10 @@
 - Panoramic views are in the form of 2D images, which can be considered as a holistic representation of 3D models.
 - This enables the use of 2D CNN to learn a deep representation from such views.
 
+<p align="center">
+  <img src="https://camo.githubusercontent.com/ebc3f535b81633d1016f0330a0bd12ecb0310dd1/68747470733a2f2f6169322d73322d7075626c69632e73332e616d617a6f6e6177732e636f6d2f666967757265732f323031362d31312d30382f356131623564333139303564386365636537623738353130663531663364386262623036333036332f312d466967757265332d312e706e67" width=500>
+</p>
+
 ## Formulation / Solver / Implementation
 - Related to previous PANORAMA by Panagiotis et al, but panoramic view shifts when the 3D shape rotates along its principle axis.
 - They pool the response of each row so that the resulting representation is not affected by this kind of shift.
