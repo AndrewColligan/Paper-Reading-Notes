@@ -196,12 +196,21 @@ We present a novel feature identification framework to recognize difficult-to-ma
  <hr>
 </details>
 
-### 2016
+### 2017
 <details>
  <summary><b>Generative and Discriminative Voxel Modeling with Convolutional Neural Networks</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/VRN.md">[Paper Note]</a></summary>
  <hr>
  <p align="justify">
 When working with three-dimensional data, choice of representation is key. We explore voxel-based models, and present evidence for the viability of voxellated representations in applications including shape modeling and object classification. Our key contributions are methods for training voxel-based variational autoencoders, a user interface for exploring the latent space learned by the autoencoder, and a deep convolutional neural network architecture for object classification. We address challenges unique to voxel-based representations, and empirically evaluate our models on the ModelNet benchmark, where we demonstrate a 51.5% relative improvement in the state of the art for object classification.
+ <hr>
+ </p>
+</details>
+
+<details>
+ <summary><b>Orientation-boosted Voxel Nets for 3D Object Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Voxels/ORION.md">[Paper Note]</a></summary>
+ <hr>
+ <p align="justify">
+Recent work has shown good recognition results in 3D object recognition using 3D convolutional networks. In this paper, we show that the object orientation plays an important role in 3D recognition. More specifically, we argue that objects induce different features in the network under rotation. Thus, we approach the category-level classification task as a multi-task problem, in which the network is trained to predict the pose of the object in addition to the class label as a parallel task. We show that this yields significant improvements in the classification results. We test our suggested architecture on several datasets representing various 3D data sources: LiDAR data, CAD models, and RGB-D images. We report state-of-the-art results on classification as well as significant improvements in precision and speed over the baseline on 3D detection. 
  <hr>
  </p>
 </details>
@@ -227,4 +236,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 21</sup></sub>
+<sub><sup>Paper Count: 22</sup></sub>
