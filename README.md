@@ -43,6 +43,16 @@ High-quality 3D object recognition is an important component of many vision and 
 <hr>
 </details>
 
+<details>
+ <summary><b>Volumetric and Multi-View CNNs for Object Classification on 3D Data</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/VMVC.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+<b>Not a hybrid but two separate methods.</b>
+3D shape models are becoming widely available and easier to capture, making available 3D information crucial for progress in object classification. Current state-of-the art methods rely on CNNs to address this problem. Recently, we witness two types of CNNs being developed: CNNs based upon volumetric representations versus CNNs based upon multi-view representations. Empirical results from these two types of CNNs exhibit a large gap, indicating that existing volumetric CNN architectures and approaches are unable to fully exploit the power of 3D representations. In this paper, we aim to improve both volumetric CNNs and multi-view CNNs according to extensive analysis of existing approaches. To this end, we introduce two distinct network architectures of volumetric CNNs. In addition, we examine multi-view CNNs, where we introduce multiresolution filtering in 3D. Overall, we are able to outperform current state-of-the-art methods for both volumetric CNNs and multi-view CNNs. We provide extensive experiments designed to evaluate underlying design choices, thus providing a better understanding of the space of methods available for object classification on 3D data.  
+  </p>
+<hr>
+</details>
+
 ## Manifolds
 ### 2019
 <details>
@@ -236,4 +246,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 22</sup></sub>
+<sub><sup>Paper Count: 23</sup></sub>
