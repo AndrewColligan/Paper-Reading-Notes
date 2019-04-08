@@ -23,6 +23,10 @@
 - Voxels used to give a regular input.
 - Create user interface.
 
+<p align="center">
+  <img src="https://github.com/ajbrock/Generative-and-Discriminative-Voxel-Modeling/raw/master/doc/GUI3.png" width=500>
+</p>
+
 ## Formulation / Solver / Implementation
 - Autoencoder made of two 3D CNN with up to 45 layers.
 - Adopt a simple **Inception-style architecture** with the intuition of maximising the number of possible "pathways" for information to propagate through the network, while still maintaining simplicity and efficiency. 
