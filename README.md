@@ -4,7 +4,7 @@ Academic papers organised into their appropiate categories.
 **Machine Learning** are organised by their shape format:
 - [Graph](#graph)
 - [Hybrid](#hybrid)
-- [Manifolds](#manifolds)
+- [Manifolds & Meshes](#manifolds-&-meshes)
 - [Mutli-View](#multi-view)
 - [Octree](#octree)
 - [Other](#other)
@@ -54,7 +54,7 @@ High-quality 3D object recognition is an important component of many vision and 
 <hr>
 </details>
 
-## Manifolds
+## Manifolds & Meshes
 ### 2019
 <details>
  <summary><b>MeshNet: Mesh Neural Network for 3D Shape Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Manifolds/MeshNet.md">[Paper Note]</a></summary>
