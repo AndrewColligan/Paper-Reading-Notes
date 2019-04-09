@@ -5,7 +5,7 @@ Academic papers organised into their appropiate categories.
 - [Graph](#graph)
 - [Hybrid](#hybrid)
 - [Manifolds & Meshes](#manifolds-and-meshes)
-- [Mutli-View](#multi-view)
+- [Multi-View](#multi-view)
 - [Octree](#octree)
 - [Other](#other)
 - [Point Cloud](#point-cloud)
