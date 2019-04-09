@@ -7,6 +7,7 @@ Academic papers organised into their appropiate categories.
 - [Manifolds](#manifolds)
 - [Mutli-View](#multi-view)
 - [Octree](#octree)
+- [Other](#other)
 - [Point Cloud](#point-cloud)
 - [Primitives](#primitives)
 - [Voxels](#voxels)
@@ -121,6 +122,17 @@ We present OctNet, a representation for deep learning with sparse 3D data. In co
 <hr>
  <p align="justify">
 We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shape analysis. Built upon the octree representation of 3D shapes, our method takes the average normal vectors of a 3D model sampled in the finest leaf octants as input and performs 3D CNN operations on the octants occupied by the 3D shape surface. We design a novel octree data structure to efficiently store the octant information and CNN features into the graphics memory and execute the entire O-CNN training and evaluation on the GPU. O-CNN supports various CNN structures and works for 3D shapes in different representations. By restraining the computations on the octants occupied by 3D surfaces, the memory and computational costs of the O-CNN grow quadratically as the depth of the octree increases, which makes the 3D CNN feasible for high-resolution 3D models. We compare the performance of the O-CNN with other existing 3D CNN solutions and demonstrate the efficiency and efficacy of O-CNN in three shape analysis tasks, including object classification, shape retrieval, and shape segmentation.
+  </p>
+<hr>
+</details>
+
+## Other
+### 2017
+<details>
+ <summary><b>Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Other/Kd-network.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+We present a new deep learning architecture (called Kdnetwork) that is designed for 3D model recognition tasks and works with unstructured point clouds. The new architecture performs multiplicative transformations and shares parameters of these transformations according to the subdivisions of the point clouds imposed onto them by kdtrees. Unlike the currently dominant convolutional architectures that usually require rasterization on uniform twodimensional or three-dimensional grids, Kd-networks do not rely on such grids in any way and therefore avoid poor scaling behavior. In a series of experiments with popular shape recognition benchmarks, Kd-networks demonstrate competitive performance in a number of shape recognition tasks such as shape classification, shape retrieval and shape part segmentation. 
   </p>
 <hr>
 </details>
@@ -255,4 +267,4 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 24</sup></sub>
+<sub><sup>Paper Count: 25</sup></sub>
