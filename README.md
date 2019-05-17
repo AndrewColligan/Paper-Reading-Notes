@@ -1,7 +1,7 @@
 # Paper Categories
 Academic papers organised into their appropiate categories.
 
-**Machine Learning** are organised by their shape format:
+**Machine Learning for 3D** are organised by their shape format:
 - [Graph](#graph)
 - [Hybrid](#hybrid)
 - [Manifolds & Meshes](#manifolds-and-meshes)
@@ -12,8 +12,11 @@ Academic papers organised into their appropiate categories.
 - [Primitives](#primitives)
 - [Voxels](#voxels)
 
+**Other Machine Learning Papers**
+- [Networks](#networks)
 
-# Machine Learning
+
+# Machine Learning for 3D
 ## Hybrid
 ### 2018
 <details>
@@ -267,4 +270,16 @@ Robust object recognition is a crucial skill for robots operating autonomously i
       
 <hr>
 
-<sub><sup>Paper Count: 25</sup></sub>
+# Other Machine Learning Papers
+## Networks
+### 2015
+### 2018
+<details>
+ <summary><b>Deep Residual Learning for Image Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/edit/master/Notes/ResNet.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers—8 deeper than VGG nets [41] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.
+</p>
+<hr>
+</details>
+<sub><sup>Paper Count: 26</sup></sub>
