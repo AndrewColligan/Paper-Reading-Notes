@@ -273,7 +273,6 @@ Robust object recognition is a crucial skill for robots operating autonomously i
 # Other Machine Learning Papers
 ## Networks
 ### 2015
-### 2018
 <details>
  <summary><b>Deep Residual Learning for Image Recognition</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/edit/master/Notes/ResNet.md">[Paper Note]</a></summary>
 <hr>
@@ -282,4 +281,6 @@ Deeper neural networks are more difficult to train. We present a residual learni
 </p>
 <hr>
 </details>
+
+<hr>
 <sub><sup>Paper Count: 26</sup></sub>
