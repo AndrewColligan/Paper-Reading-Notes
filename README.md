@@ -13,6 +13,7 @@ Academic papers organised into their appropiate categories.
 - [Voxels](#voxels)
 
 **Other Machine Learning Papers**
+- [IoU](#iou)
 - [Networks](#networks)
 
 
@@ -271,6 +272,17 @@ Robust object recognition is a crucial skill for robots operating autonomously i
 <hr>
 
 # Other Machine Learning Papers
+## IoU
+### 2019
+<details>
+ <summary><b>Generalized Intersection over Union: A Metric and A Loss for Bounding Box Regression</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Other_Machine_Learning_Papers/GIoU.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Intersection over Union (IoU) is the most popular evaluation metric used in the object detection benchmarks. However, there is a gap between optimizing the commonly used distance losses for regressing the parameters of a bounding box and maximizing this metric value. The optimal objective for a metric is the metric itself. In the case of axisaligned 2D bounding boxes, it can be shown that IoU can be directly used as a regression loss. However, IoU has a plateau making it infeasible to optimize in the case of nonoverlapping bounding boxes. In this paper, we address the weaknesses of IoU by introducing a generalized version as both a new loss and a new metric. By incorporating this generalized IoU (GIoU) as a loss into the state-of-the art object detection frameworks, we show a consistent improvement on their performance using both the standard, IoU based, and new, GIoU based, performance measures on popular object detection benchmarks such as PASCAL VOC and MS COCO.
+</p>
+<hr>
+</details>
+
 ## Networks
 ### 2015
 <details>
@@ -283,4 +295,4 @@ Deeper neural networks are more difficult to train. We present a residual learni
 </details>
 
 <hr>
-<sub><sup>Paper Count: 26</sup></sub>
+<sub><sup>Paper Count: 27</sup></sub>
