@@ -32,6 +32,10 @@
 - This represents a normalised measure that focuses on the empty volume (area) between A and B.
 - GIoU is attained by subtracting this ratio from the IoU value.
 
+<p align="center">
+  <img src="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Imgs/GIoU.png" width=500>
+</p>
+
 ## Useful info / tips
 - GIoU can potentially have a steeper gradient than the IoU, therefore allowing for better optimisation.
 
