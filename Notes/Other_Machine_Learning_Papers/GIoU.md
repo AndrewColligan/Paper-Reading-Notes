@@ -16,7 +16,9 @@
 ## Problem addressed / Motivation
 - IoU as a distance is a metric e.g. L<sub>IoU</sub> = 1 - IoU.
 - IoU is also invariant to the scale of the problem.
-- However, when there is not an intersect then IoU = 0 and will not reflect if the bounding boxes, it will have no gradient in these cases.
+- However, when there is not an intersect then IoU = 0 and the IoU will not reflect if the bounding boxes are in the vicinity to each other or far away.
+- In this case the IoU will have no gradient and therefore will not be differentiable.
+- This means that the IoU cannot be used as the loss function.
 
 ## Idea / Observation / Contribution
 - A generalised IoU (GIoU) for both use as a new loss and a new metric.
@@ -48,7 +50,7 @@
 - Networks used:
   - YOLO v3
   - Faster R-CNN
-  - Mack R-CNN
+  - Mask R-CNN
 
 ## Results
 - Compare L<sub>GIoU</sub> to l<sub>1</sub>-smooth and L<sub>IoU</sub> as loss function.
