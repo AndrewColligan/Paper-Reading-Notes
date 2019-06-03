@@ -51,7 +51,7 @@
   - Mack R-CNN
 
 ## Results
-- Compare L<sub>GIoU</sub> to l1-smooth as loss function.
+- Compare L<sub>GIoU</sub> to l1-smooth and L<sub>IoU</sub> as loss function.
 - In each experiment, there was a relative improvement.
 
 # Resource
