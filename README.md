@@ -173,6 +173,16 @@ Point cloud is an important type of geometric data structure. Due to its irregul
 </details>
 
 ## Primitives
+### 2019
+<details>
+ <summary><b>Superquadrics Revisited: Learning 3D Shape Parsing beyond Cuboids</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Primitives/Superquadrics.md">[Paper Note]</a></summary>
+ <hr>
+ <p align="justify">
+Abstracting complex 3D shapes with parsimonious part-based representations has been a long standing goal in computer vision. This paper presents a learning-based solution to this problem which goes beyond the traditional 3D cuboid representation by exploiting superquadrics as atomic elements. We demonstrate that superquadrics lead to more expressive 3D scene parses while being easier to learn than 3D cuboid representations. Moreover, we provide an analytical solution to the Chamfer loss which avoids the need for computational expensive reinforcement learning or iterative prediction. Our model learns to parse 3D objects into consistent superquadric representations without supervision. Results on various ShapeNet categories as well as the SURREAL human body dataset demonstrate the flexibility of our model in capturing fine details and complex poses that could not have been modelled using cuboids.
+ </p>
+ <hr>
+</details>
+ 
 ### 2018
 <details>
  <summary><b>CSGNet: Neural Shape Parser for Constructive Solid Geometry</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Primitives/CSGNet.md">[Paper Note]</a></summary>
@@ -295,4 +305,4 @@ Deeper neural networks are more difficult to train. We present a residual learni
 </details>
 
 <hr>
-<sub><sup>Paper Count: 27</sup></sub>
+<sub><sup>Paper Count: 28</sup></sub>
