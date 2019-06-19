@@ -190,6 +190,15 @@ Abstracting complex 3D shapes with parsimonious part-based representations has b
  </p>
  <hr>
 </details>
+
+<details>
+ <summary><b>Unsupervised Primitive Discovery for Improved 3D Generative Modeling</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Primitives/Unsupervised_Primitive_Discovery.md">[Paper Note]</a></summary>
+ <hr>
+ <p align="justify">
+3D shape generation is a challenging problem due to the high-dimensional output space and complex part configurations of real-world objects. As a result, existing algorithms experience difficulties in accurate generative modeling of 3D shapes. Here, we propose a novel factorized generative model for 3D shape generation that sequentially transitions from coarse to fine scale shape generation. To this end, we introduce an unsupervised primitive discovery algorithm based on a higher-order conditional random field model. Using the primitive parts for shapes as attributes, a parameterized 3D representation is modeled in the first stage. This representation is further refined in the next stage by adding fine scale details to shape. Our results demonstrate improved representation ability of the generative model and better quality samples of newly generated 3D shapes. Further, our primitive generation approach can accurately parse common objects into a simplified representation.
+ </p>
+ <hr>
+</details>
  
 ### 2018
 <details>
@@ -313,4 +322,4 @@ Deeper neural networks are more difficult to train. We present a residual learni
 </details>
 
 <hr>
-<sub><sup>Paper Count: 29</sup></sub>
+<sub><sup>Paper Count: 30</sup></sub>
