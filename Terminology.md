@@ -1,7 +1,7 @@
 # Terminology
 This document contains important information on many topics listed below, related to my PhD project on `Application of Deep Learning for the Decomposition of 3D Shape for Hexahedral Mesh Generation`.
 - [Machine Learning](#machine-learning)
-- [CAD/CAE](#cad/cae)
+- [CAD/CAE](CAD/CAE)
 - [Programming](#programming)
 
 ## Machine Learning
