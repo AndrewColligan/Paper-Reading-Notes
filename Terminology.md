@@ -53,7 +53,6 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
 #### Tensor Functions
 <details>
   <summary><code>torch.clamp(<i>input, min, max, out=None</i>) → Tensor</code><br/> <blockquote>Clamps all elements in <b>input</b> into the range <b>[min, max]</b> and returns a resulting tensor.<blockquote></summary>
-<hr>
   <pre>
   <code>
   >>> a = torch.randn(4)
@@ -63,12 +62,10 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
   <b>tensor([-0.5000,  0.1734, -0.0478, -0.0922])</b>
   </code>
   </pre>
-<hr>
 </details>
     
 <details>
   <summary><span><code>view(<i>*shape</i>) → Tensor</code></span><br/> <blockquote>Returns a tensor with the same data as the <b>self</b> tensor but of a different <b>shape</b>.<blockquote></summary>
-<hr>
   <pre>
   <code>
   >>> x = torch.randn(4, 4)
@@ -82,6 +79,5 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
   <b>torch.Size([2, 8])</b>
   </code>
   </pre>
-<hr>
 </details>
 
