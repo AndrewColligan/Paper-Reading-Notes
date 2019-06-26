@@ -84,21 +84,15 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
 #### NN Functions
 <details>
   <summary><code>loss.backward()</code><br/><blockquote>Computes <b>dloss/dx</b> for every parameter x which has <code>requires_grad=True</code>.<blockquote></summary>
-  <pre>
-  <code>
-  # These are accumulated into x.grad for every parameter x.
-  >>> x.grad += dloss/dx
-  </code>
-  </pre>
-  <pre>
-  <code>
-  # optimizer.step updates the value of x using the gradient x.grad. For example, the SGD optimizer performs:
-  >>> x += -lr * x.grad
-  </code>
-  </pre>
-  # optimizer.zero_grad() clears x.grad for every parameter x in the optimizer. It’s important to call this before loss.backward(), otherwise you’ll accumulate the gradients from multiple passes.
-  # If you have multiple losses (loss1, loss2) you can sum them and then call backwards once:
-
-loss3 = loss1 + loss2
-loss3.backward()
+  <hr>
+    These are accumulated into <code>x.grad</code> for every parameter x.</br></br>
+    <pre><code>x.grad += dloss/dx</code></pre>
+    <code>optimizer.step</code> updates the value of x using the gradient <code>x.grad</code>. For example, the SGD optimizer performs:     </br></br>
+    <pre><code>x += -lr * x.grad</code></pre>
+    <code>optimizer.zero_grad()</code> clears <code>x.grad</code> for every parameter x in the optimizer. It’s important to call this before <code>loss.backward()</code>, otherwise you’ll accumulate the gradients from multiple passes.</br></br>
+    If you have multiple losses (loss1, loss2) you can sum them and then call backwards once:</br></br>
+    <pre>
+    <code>loss3 = loss1 + loss2
+    loss3.backward()</code></pre> 
+    <hr>
 </details>
