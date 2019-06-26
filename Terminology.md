@@ -39,8 +39,32 @@ Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
 ### Python
 
+<hr>
+
 ### Pytorch
 Pytorch differs from Tensorflow and Caffe etc. due to the unique way it builds its neural networks. These other machine learning frameworks use a **static** method, where one has to build a neural network and reuse the same structure again and again. This means that if you want to change how the network behaves you must start from scratch again.
 
 Pytorch instead using a technique called *reverse-mode auto differentiation*, which allows you to change the way your network behaves arbitrarily with zero lag or overhead. This means that it has a **dynamic** method of building its graph of the network, where the graph is built on the fly. This allows for more flexiblity and is why Pytorch is becoming more dominant in research applications.
+
+
+
+#### Functions
+<details>
+  <summary><span><code>view(<i>*shape</i>) -> Tensor</code></span><br/> <blockquote>Returns a tensor with the same data as the <b>self</b> tensor but of a different <b>shape</b>.<blockquote></summary>
+<hr>
+  <pre>
+  <code>
+  >>> x = torch.randn(4, 4)
+  >>> x.size()
+  <b>torch.Size([4, 4])</b>
+  >>> y = x.view(16)
+  >>> y.size()
+  <b>torch.Size([16])</b>
+  >>> z = x.view(-1, 8)  # the size -1 is inferred from other dimensions<br>
+  >>> z.size()
+  <b>torch.Size([2, 8])</b>
+  </code>
+  </pre>
+<hr>
+</details>
 
