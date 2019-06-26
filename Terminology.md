@@ -23,7 +23,7 @@ To generate a string of terminal symbols from a CFG, we:
 Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
 ## CAD/CAE
-- **[Geometric Idealisation](#geometric-idealisation)**<br>
+- [Geometric Idealisation](#geometric-idealisation)
 - **[Geometric Clean Up](#geometric-clean-up)**<br>
 - [CAD/CAE Integration](CAD/CAE_Integration)
 
