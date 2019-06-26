@@ -1,6 +1,11 @@
 # Terminology
+This document contains important information on many topics listed below, related to my PhD project on `Application of Deep Learning for the Decomposition of 3D Shape for Hexahedral Mesh Generation`.
+- [Machine Learning](Machine_Learning)
+- [CAD/CAE](CAD/CAE)
+- [Programming](Programming)
 
-## Context-Free Grammars
+## Machine Learning
+### Context-Free Grammars
 
 A *context-free grammar (CFG)* is a set of recursive writing rules (or **productions**) used to generate patterns of strings.
 
@@ -16,3 +21,22 @@ To generate a string of terminal symbols from a CFG, we:
 - Repeat the process of selecting nonterminal symbols in the string,and replacing them with the right hand side of some corresponding production, until all nonterminals have been replaced by terminal symbols.
 
 Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
+
+## CAD/CAE
+- [Geometric Idealisation](Geometric_Idealisation)
+- [Geometric Clean Up](Geometric_Clean_Up)
+- [CAD/CAE Integration](CAD/CAE_Integration)
+
+### Geometric_Idealisation
+
+### Geometric_Clean_Up
+
+### CAD/CAE_Integration
+
+## Programming
+- [Python](Python)
+- [Pytorch](Pytorch)
+
+### Python
+
+### Pytorch
