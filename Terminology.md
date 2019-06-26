@@ -1,7 +1,7 @@
 # Terminology
 This document contains important information on many topics listed below, related to my PhD project on `Application of Deep Learning for the Decomposition of 3D Shape for Hexahedral Mesh Generation`.
 - [Machine Learning](#machine-learning)
-- [CAD/CAE](CAD/CAE)
+- [CAD/CAE](#cad-&-cae)
 - [Programming](#programming)
 
 ## Machine Learning
@@ -22,16 +22,16 @@ To generate a string of terminal symbols from a CFG, we:
 
 Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
-## CAD/CAE
+## CAD & CAE
 - [Geometric Idealisation](#geometric-idealisation)
 - [Geometric Clean Up](#geometric-clean-up)
-- [CAD/CAE Integration](#cad/cae-integration)
+- [CAD/CAE Integration](#cad-&-cae-integration)
 
 ### Geometric Idealisation
 
 ### Geometric Clean Up
 
-### CAD/CAE Integration
+### CAD & CAE Integration
 
 ## Programming
 - [Python](#python)
