@@ -1,7 +1,7 @@
 # Terminology
 This document contains important information on many topics listed below, related to my PhD project on `Application of Deep Learning for the Decomposition of 3D Shape for Hexahedral Mesh Generation`.
 - [Machine Learning](#machine-learning)
-- [CAD/CAE](#cad-&-cae)
+- [CAD/CAE](#computer-aided-design-and-computer-aided-engineering)
 - [Programming](#programming)
 
 ## Machine Learning
@@ -22,7 +22,7 @@ To generate a string of terminal symbols from a CFG, we:
 
 Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
-## CAD & CAE
+## Computer Aided Design and Computer Aided Engineering
 - [Geometric Idealisation](#geometric-idealisation)
 - [Geometric Clean Up](#geometric-clean-up)
 - [CAD/CAE Integration](#cad-&-cae-integration)
@@ -42,15 +42,32 @@ Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 <hr>
 
 ### Pytorch
-Pytorch differs from Tensorflow and Caffe etc. due to the unique way it builds its neural networks. These other machine learning frameworks use a **static** method, where one has to build a neural network and reuse the same structure again and again. This means that if you want to change how the network behaves you must start from scratch again.
+Pytorch differs from Tensorflow and Caffe etc. due to the unique way it builds its neural networks. Other machine learning frameworks use a **static** method, where one has to build a neural network and reuse the same structure again and again. This is called **Define and Run**, which means that if you want to change how the network behaves you must start from scratch again.
 
-Pytorch instead using a technique called *reverse-mode auto differentiation*, which allows you to change the way your network behaves arbitrarily with zero lag or overhead. This means that it has a **dynamic** method of building its graph of the network, where the graph is built on the fly. This allows for more flexiblity and is why Pytorch is becoming more dominant in research applications.
+Pytorch instead uses a technique called *reverse-mode auto differentiation*, which allows you to change the way your network behaves arbitrarily with zero lag or overhead. This means that it has a **dynamic** method of building its graph of the network, where the graph is built on the fly. This **Define by Run"** capability allows for more flexiblity and is why Pytorch is becoming more dominant in research applications.
 
+<p align="center">
+  <img src="https://cdn-images-1.medium.com/max/1600/1*5PLIVNA5fIqEC8-kZ260KQ.gif" width=400>
+</p>
 
-
-#### Functions
+#### Tensor Functions
 <details>
-  <summary><span><code>view(<i>*shape</i>) -> Tensor</code></span><br/> <blockquote>Returns a tensor with the same data as the <b>self</b> tensor but of a different <b>shape</b>.<blockquote></summary>
+  <summary><code>torch.clamp(<i>input, min, max, out=None</i>) → Tensor</code><br/> <blockquote>Clamps all elements in <b>input</b> into the range <b>[min, max]</b> and returns a resulting tensor.<blockquote></summary>
+<hr>
+  <pre>
+  <code>
+  >>> a = torch.randn(4)
+  >>> a
+  <b>tensor([-1.7120,  0.1734, -0.0478, -0.0922])</b>
+  >>> torch.clamp(a, min=-0.5, max=0.5)
+  <b>tensor([-0.5000,  0.1734, -0.0478, -0.0922])</b>
+  </code>
+  </pre>
+<hr>
+</details>
+    
+<details>
+  <summary><span><code>view(<i>*shape</i>) → Tensor</code></span><br/> <blockquote>Returns a tensor with the same data as the <b>self</b> tensor but of a different <b>shape</b>.<blockquote></summary>
 <hr>
   <pre>
   <code>
