@@ -1,10 +1,10 @@
 # Terminology
 This document contains important information on many topics listed below, related to my PhD project on `Application of Deep Learning for the Decomposition of 3D Shape for Hexahedral Mesh Generation`.
-- [Machine Learning](Machine_Learning)
-- [CAD/CAE](CAD/CAE)
-- [Programming](Programming)
+- [Machine Learning](#machine-learning)
+- [CAD/CAE](#cad/cae)
+- [Programming](#programming)
 
-## Machine_Learning
+## Machine Learning
 ### Context-Free Grammars
 
 A *context-free grammar (CFG)* is a set of recursive writing rules (or **productions**) used to generate patterns of strings.
@@ -24,18 +24,18 @@ Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
 ## CAD/CAE
 - [Geometric Idealisation](#geometric-idealisation)
-- **[Geometric Clean Up](#geometric-clean-up)**<br>
-- [CAD/CAE Integration](CAD/CAE_Integration)
+- [Geometric Clean Up](#geometric-clean-up)
+- [CAD/CAE Integration](#cad/cae-integration)
 
 ### Geometric Idealisation
 
-### Geometric_Clean_Up
+### Geometric Clean Up
 
-### CAD/CAE_Integration
+### CAD/CAE Integration
 
 ## Programming
-- [Python](Python)
-- [Pytorch](Pytorch)
+- [Python](#python)
+- [Pytorch](#pytorch)
 
 ### Python
 
