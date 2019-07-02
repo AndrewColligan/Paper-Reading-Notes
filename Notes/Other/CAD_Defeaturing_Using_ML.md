@@ -1,65 +1,59 @@
 # Basic info
-- Title: Superquadrics Revisited: Learning 3D Shape Parsing beyond Cuboids
-- Author: Despoina Paschalidou, Ali Osman Ulusoy & Andreas Geiger
-- Affiliation: Autonomous Vision Group, MPI for Intelligent Systems Tubingen & Microsoft &  University of Tubingen & Max Planck ETH Center for Learning Systems
-- Publication status: CVPR 2019
-- Short name: Superquadrics
+- Title: CAD Defeaturing Using Machine Learning
+- Author: 
+- Affiliation: 
+- Publication status: 
+- Short name: CAD Defeaturing Using ML
 - Year: 2019
 
 # Score
-- Idea: 5
-- Usability: 5
-- Presentation: 5
-- Overall: 5
+- Idea: 
+- Usability: 
+- Presentation: 
+- Overall: 
 
 # Contributions
 ## Problem addressed / Motivation
-- Abstracting complex 3D shapes with parsimonious part-based representations has been a long standing goal in computer vision.
+- Using machine learning for the defeaturing of CAD models for tetrahedral meshing.
 
 ## Idea / Observation / Contribution
-- Utilises superquadrics as primitives instead of 3D cuboid representations.
-- This leads to more expressive 3D scene parses while being easier to learn than 3D cuboid representations.
-- Provide a solution to the Chamfer loss which avoids the need for computational expensive reinforcement learning or iterative prediction.
-
-<p align="center">
-  <img src="https://ps.is.tuebingen.mpg.de/uploads/publication/image/22555/superquadrics_parsing.png" width=500>
-</p>
+- Using machine learning predictions of mesh quality for geometric features of a CAD model prior to meshing.
+- This can be used to identify potential problems areas and improve meshing outcomes by presenting a prioritised list of suggested geometric operations to users.
 
 ## Formulation / Solver / Implementation
-- Unsupervised method.
-- Network uses a voxelised input and consists of an encoder with 5 layer convolutional layers, followed by a fully connected layer, then 5 regressor final layers predicting the size (&alpha;), shape (&epsilon;), translation (t), rotation (q) and probability of existence (&gamma;) in continuous space.
-- The reconstruction loss measures the difference between the predicted shape and the target shape.
-- The Chamsfer distance is used where the distance from the predicted primitive and the point cloud is measured and vice versa. The loss of each of these is added together.
-- A set of points is sampled from the continuous surface of the primitive.
-- There is also a parsimony loss to encourage sparity.
+- **Ensemble of decision trees (EDT)** containing 75 trees with a maximum tree depth of 25.
 
 ## Useful info / tips
-- The probability of existence (&gamma;) uses the Bernoulli distribution to predict if a primitive is part of the scene (i.e. z<sub>m</sub>=1) or not (i.e. z<sub>m</sub>=0).
+- Only capable of defeaturing individual parts.
 
 # Evaluation
 ## Dataset
-- ShapeNet
-- SURREAL human body dataset
+- 94 CAD models for GrabCAD
 
 ## Metrics
-- Superquadrics define a family of parametric surfaces that can be fully described by a set of 11 parameters.
-- To further increase parsimony, they fixed all parameters expcept &gamma; for additional 5k iterations. This step removed remaining overlapping primitives.
-- Voxel resolution of 32<sup>3</sup>.
-- Maximum number of primitives M = 20.
+- Mesh quality metrics
+  1. **Scaled Jacobian** - the minimum Jacobian at any of the four vertices of a tetrahedron divided by the lengths of its three adjacent edges.
+  2. **In-Radius** - the radius of an inscribed sphere within a tetrahedra.
+  3. **Deviation** - the distance from the centroid of a surface triangle to its closest point on the geometry.
+  
+- Locality of mesh metrics
+  1. **Bounding box**
+  2. **Local topology**
+
 
 ## Results
-- The results show that for any given number of primitives, superquadrics consistently achieve a lower loss, and hence a higher modeling fidelity.
+
 
 # Resource
 ## Paper
-https://arxiv.org/abs/1904.09970
+
 
 ## Project page
-https://ps.is.tuebingen.mpg.de/publications/paschalidou2019cvpr
+
 
 ## Source code
-https://github.com/paschalidoud/superquadric_parsing
+
 
 ## Questions
-- Can we use a similar regressor approach for the Prime Primitives?
+
 
