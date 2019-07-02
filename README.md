@@ -131,6 +131,21 @@ We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shap
 </details>
 
 ## Other
+### 2019
+<details>
+ <summary><b>CAD Defeaturing using Machine Learning</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Other/CAD_Defeaturing_Using_ML.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+We describe new machine-learning-based methods to defeature CAD models for tetrahedral meshing. Using machine
+learning predictions of mesh quality for geometric features of a CAD model prior to meshing we can identify potential
+problem areas and improve meshing outcomes by presenting a prioritized list of suggested geometric operations to
+users. Our machine learning models are trained using a combination of geometric and topological features from the
+CAD model and local quality metrics for ground truth. We demonstrate a proof-of-concept implementation of the
+resulting workflow using a commercial meshing toolkit.
+  </p>
+<hr>
+</details>
+
 ### 2017
 <details>
  <summary><b>Escape from Cells: Deep Kd-Networks for the Recognition of 3D Point Cloud Models</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Other/Kd-network.md">[Paper Note]</a></summary>
@@ -322,4 +337,4 @@ Deeper neural networks are more difficult to train. We present a residual learni
 </details>
 
 <hr>
-<sub><sup>Paper Count: 30</sup></sub>
+<sub><sup>Paper Count: 31</sup></sub>
