@@ -3,6 +3,7 @@ This document contains important information on many topics listed below, relate
 - [Machine Learning](#machine-learning)
 - [CAD/CAE](#computer-aided-design-and-computer-aided-engineering)
 - [Programming](#programming)
+- [Mathematics](#mathematics)
 
 ## Machine Learning
 ### Context-Free Grammars
@@ -20,7 +21,8 @@ To generate a string of terminal symbols from a CFG, we:
 - Apply one of the productions with the start symbol on the left hand size, replacing the start symbol with the right hand sidde of the production.
 - Repeat the process of selecting nonterminal symbols in the string,and replacing them with the right hand side of some corresponding production, until all nonterminals have been replaced by terminal symbols.
 
-Source: https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
+#### Sources
+- https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html
 
 ## Computer Aided Design and Computer Aided Engineering
 - [Geometric Idealisation](#geometric-idealisation)
@@ -96,3 +98,24 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
     loss3.backward()</code></pre> 
     <hr>
 </details>
+
+## Mathematics
+### Metrics
+
+#### Manhatten distance 
+- L<sub>1</sub> distance
+- The distance between two points measured along axes at right angles. 
+- In a plane with p<sub>1</sub> at (x<sub>1</sub>, y<sub>1</sub>) and p<sub>2</sub> at (x<sub>2</sub>, y<sub>2</sub>) it is <b>|x<sub>1</sub> - x<sub>2</sub>| + |y<sub>1</sub> - y<sub>2</sub>|</b>.
+
+#### Euclidean distance
+- L<sub>2</sub> distance
+- The straight line distance between two points.
+- In a plane with p<sub>1</sub> at (x<sub>1</sub>, y<sub>1</sub>) and p<sub>2</sub> at (x<sub>2</sub>, y<sub>2</sub>) it is <b>sqrt((x<sub>1</sub> - x<sub>2</sub>)<sup>2</sup> + (y<sub>1</sub> - y<sub>2</sub>)<sup>2</sup>)</b>.
+  
+<p align="center">
+  <img src="https://camo.githubusercontent.com/3fd9528d3c336947a78bda29aa36d98218a237eb/687474703a2f2f6e6561726973742e61692f77702d636f6e74656e742f75706c6f6164732f323031372f31312f4c315f616e645f4c325f6c696e65732e706e67" width=500>
+</p>
+
+#### Sources
+- https://xlinux.nist.gov/dads/HTML/manhattanDistance.html
+- https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html#https://github.com/nearist/vsx-client/wiki/L1-versus-L2
