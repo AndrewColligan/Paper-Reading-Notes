@@ -119,3 +119,12 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
 #### Sources
 - https://xlinux.nist.gov/dads/HTML/manhattanDistance.html
 - https://github.com/nearist/vsx-client/wiki/L1-versus-L2
+
+### Sets
+#### Permutations
+- The re-ordering of elements in a set with a care for the order of the elements.
+- For example, your locker unlocks with a specific permutation of 2, 3, 4 and 5 (e.g. 2453).
+
+#### Combinations
+- The re-ordering of elements in a set without a care for the order of the elements.
+- For example, your locker would unlock with any permutation of 2, 3, 4 and 5 to truly be by combination.
