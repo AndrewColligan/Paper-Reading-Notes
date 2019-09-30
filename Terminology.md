@@ -118,4 +118,4 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
 
 #### Sources
 - https://xlinux.nist.gov/dads/HTML/manhattanDistance.html
-- https://www.cs.rochester.edu/~nelson/courses/csc_173/grammars/cfg.html#https://github.com/nearist/vsx-client/wiki/L1-versus-L2
+- https://github.com/nearist/vsx-client/wiki/L1-versus-L2
