@@ -128,3 +128,6 @@ Pytorch instead uses a technique called *reverse-mode auto differentiation*, whi
 #### Combinations
 - The re-ordering of elements in a set without a care for the order of the elements.
 - For example, your locker would unlock with any permutation of 2, 3, 4 and 5 to truly be by combination.
+
+#### Sources
+- https://medium.com/i-math/combinations-permutations-fa7ac680f0ac
