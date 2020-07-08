@@ -40,6 +40,20 @@
   <img src="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Imgs/diffpool_fig_2.PNG" width = 900>
 </p>
 
+#### Pooling with an Assignment Matrix
+- Each row of S<sup>(l)</sup> corresponds to one of the n<sub>l</sub> nodes (or clusters) at layer l,
+and each column of S<sup>(l)</sup> corresponds to one of the n<sub>l+1</sub> clusters at the next layer l + 1. 
+- Intuitively, S<sup>(l)</sup> provides a soft assignment of each node at layer l to a cluster in the next coarsened layer l + 1.
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=X^{l&plus;1}=S^{(l)T}Z(l)\in&space;\mathbb{R}^{n^{_{l&plus;1}}\times&space;d}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?X^{l&plus;1}=S^{(l)T}Z(l)\in&space;\mathbb{R}^{n^{_{l&plus;1}}\times&space;d}" title="X^{l+1}=S^{(l)T}Z(l)\in \mathbb{R}^{n^{_{l+1}}\times d}" /></a></p>
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=A^{l&plus;1}=S^{(l)T}A(l)S^{(l)}\in&space;\mathbb{R}^{n^{_{l&plus;1}}\times&space;n^{_{l&plus;1}}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A^{l&plus;1}=S^{(l)T}A(l)S^{(l)}\in&space;\mathbb{R}^{n^{_{l&plus;1}}\times&space;n^{_{l&plus;1}}}" title="A^{l+1}=S^{(l)T}A(l)S^{(l)}\in \mathbb{R}^{n^{_{l+1}}\times n^{_{l+1}}}" /></a></p>
+
+#### Learning the Assignment Matrix
+- Learn S<sup>(l)</sup> and Z<sup>(l)</sup> with two separate GNNs applied over the same input.
+<p align="center">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" title="Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" /></a>
+</p>
+
+
 # Evaluation
 ## Dataset
 - ENZYMES
