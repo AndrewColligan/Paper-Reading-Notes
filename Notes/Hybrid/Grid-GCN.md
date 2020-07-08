@@ -48,7 +48,7 @@ This module samples M point groups from N points. Aims to effectively structure 
 -	A barycenter is the center of mass of two or more orbiting bodies
 
 <p align="center">
-  <img src="https://images.deepai.org/converted-papers/1912.02984/figures/CAGQ/CAGQ.png" width = 500>
+  <img src="https://images.deepai.org/converted-papers/1912.02984/figures/CAGQ/CAGQ.png" width = 800>
 </p>
 
 ### Grid Context Aggregation (GCA) 
