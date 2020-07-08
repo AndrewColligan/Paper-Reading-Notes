@@ -16,9 +16,19 @@ Academic papers organised into their appropiate categories.
 - [IoU](#iou)
 - [Networks](#networks)
 
-
 # Machine Learning for 3D
 ## Hybrid
+### 2020
+<details>
+ <summary><b>Grid-GCN for Fast and Scalable Point Cloud Learning</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/Grid-GCN.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Due to the sparsity and irregularity of the point cloud data, methods that directly consume points have become popular. Among all point-based models, graph convolutional networks (GCN) lead to notable performance by fully preserving the data granularity and exploiting point interrelation. However, point-based networks spend a significant amount of time on data structuring (e.g., Farthest Point Sampling (FPS) and neighbor points querying), which limit the speed and scalability. In this paper, we present a
+method, named Grid-GCN, for fast and scalable point cloud learning. Grid-GCN uses a novel data structuring strategy, Coverage-Aware Grid Query (CAGQ). By leveraging the efficiency of grid space, CAGQ improves spatial coverage while reducing the theoretical time complexity. Compared with popular sampling methods such as Farthest Point Sampling (FPS) and Ball Query, CAGQ achieves up to 50 speed-up. With a Grid Context Aggregation (GCA) module, Grid-GCN achieves state-of-the-art performance on major point cloud classification and segmentation benchmarks with significantly faster runtime than previous studies. Remarkably, Grid-GCN achieves the inference speed of 50fps on ScanNet using 81920 points as input. The supplementary 1 and the code 2 are released.
+</p>
+<hr>
+</details>
+
 ### 2018
 <details>
  <summary><b>PointGrid: A Deep Network for 3D Shape Understanding</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Hybrid/PointGrid.md">[Paper Note]</a></summary>
