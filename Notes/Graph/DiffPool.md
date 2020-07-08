@@ -36,6 +36,9 @@
 - This process is repeated for each layer of the network.
 - The final output representation is used to classify the graph.
 
+<p align="center">
+  <img src="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Imgs/diffpool_fig_2.PNG" width = 900>
+</p>
 
 # Evaluation
 ## Dataset
@@ -64,7 +67,8 @@
 https://arxiv.org/abs/1806.08804
 
 ## Source code
-
+- [Orignal](https://github.com/RexYing/diffpool)
+- [PyTorch](https://github.com/dmlc/dgl/tree/master/examples/pytorch/diffpool)
 
 ## Questions
 
