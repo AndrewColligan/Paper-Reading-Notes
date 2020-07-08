@@ -86,6 +86,7 @@ A graph convolution module to exploit point relationships. It performs grid cont
 
 ## Results
 |                |             | ModelNet40  |            | ModelNet10   |          |              |
+| -------------- | ----------- | ----------- | ---------- | ------------ | -------- | ------------ |
 | Input (xyz)    |             | OA          | mAcc       | OA           | mAcc     | Latency (ms) |
 | Grid-GCN       | 16x1024     | 93.1        | 91.3       | 97.5         | 97.4     | 42.2         |
 
