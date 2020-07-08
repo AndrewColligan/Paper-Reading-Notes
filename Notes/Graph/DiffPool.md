@@ -2,9 +2,9 @@
 - Title: Hierarchical Graph Representation Learning with Differentiable Pooling
 - Author: Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton & Jure Leskovec
 - Affiliation: Stanford University, TU Dortmund University & University of Southern California
-- Publication status:  
+- Publication status: NIPS 2018
 - Short name: DiffPool
-- Year: 
+- Year: 2018
 
 # Score
 - Idea: 
