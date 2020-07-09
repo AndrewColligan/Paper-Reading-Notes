@@ -18,6 +18,16 @@ Academic papers organised into their appropiate categories.
 
 # Machine Learning for 3D
 ## Graph
+### 2019
+<details>
+<summary><b>Deep Hierarchical Graph Convolution for Election Prediction from Geospatial Census Data</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Graph/Hierarchical_GCNN.md">[Paper Note]</a></summary>
+<hr>
+ <p align="justify">
+Geographic information systems’ (GIS) research is widely used within the social and physical sciences and plays a crucial role in the development and implementation by governments of economic, education, environment and transportation policy. While machine learning methods have been applied to GIS datasets, the uptake of powerful deep learning CNN methodologies has been limited in part due to challenges posed by the complex and often poorly structured nature of the data. In this paper, we demonstrate the utility of GCNNs for GIS analysis via a multi-graph hierarchical spatial-filter GCNN network model in the context of GIS systems to predict election outcomes using socio-economic features drawn from the 2016 Australian Census. We report a marked improvement in performance accuracy of Hierarchical GCNNs over benchmark generalised linear models and standard GCNNs, especially in semi-supervised tasks. These results indicate the widespread potential for GIS-GCNN research methods to enrich socio-economic GIS analysis, aiding the social sciences and policy development.
+</p>
+<hr>
+</details>
+
 ### 2018
 <details>
  <summary><b>Hierarchical Graph Representation Learning with Differentiable Pooling</b> <a href="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Graph/DiffPool.md">[Paper Note]</a></summary>
