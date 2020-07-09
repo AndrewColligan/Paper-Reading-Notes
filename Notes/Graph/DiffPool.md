@@ -7,10 +7,10 @@
 - Year: 2018
 
 # Score
-- Idea: 
-- Usability: 
+- Idea: 4
+- Usability: 4
 - Presentation: 5
-- Overall: 
+- Overall: 4
 
 # Contributions
 ## Problem addressed / Motivation
