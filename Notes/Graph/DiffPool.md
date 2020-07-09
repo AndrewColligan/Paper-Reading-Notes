@@ -41,6 +41,7 @@
 </p>
 
 #### Pooling with an Assignment Matrix
+- Learned cluster assignment matrix at layer l is <a href="https://www.codecogs.com/eqnedit.php?latex=S^{(l)}\in&space;\mathbb{R}^{^{n_{l}}\times&space;n_{l&plus;1}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S^{(l)}\in&space;\mathbb{R}^{^{n_{l}}\times&space;n_{l&plus;1}}" title="S^{(l)}\in \mathbb{R}^{^{n_{l}}\times n_{l+1}}" /></a> where n is the number of nodes.
 - Each row of S<sup>(l)</sup> corresponds to one of the n<sub>l</sub> nodes (or clusters) at layer l,
 and each column of S<sup>(l)</sup> corresponds to one of the n<sub>l+1</sub> clusters at the next layer l + 1. 
 - Intuitively, S<sup>(l)</sup> provides a soft assignment of each node at layer l to a cluster in the next coarsened layer l + 1.
@@ -49,10 +50,29 @@ and each column of S<sup>(l)</sup> corresponds to one of the n<sub>l+1</sub> clu
 
 #### Learning the Assignment Matrix
 - Learn S<sup>(l)</sup> and Z<sup>(l)</sup> with two separate GNNs applied over the same input.
+- Z<sup>(l)</sup> represents new embeddings for the input nodes at this layer.
 <p align="center">
   <a href="https://www.codecogs.com/eqnedit.php?latex=Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" title="Z^{l}=GNN^{_{l,embed}}(A^{^{(l)}},X^{^{(l)}})" /></a>
 </p>
 
+- S<sup>(l)</sup> represents probabalistic assignments of the input nodes to n<sub>l+1</sub> clusters.
+- Output dimension n<sub>l+1</sub> is a hyperparameter.
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=S^{l}=softmax(GNN^{_{l,pool}}(A^{^{(l)}},X^{^{(l)}}))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S^{l}=softmax(GNN^{_{l,pool}}(A^{^{(l)}},X^{^{(l)}}))" title="S^{l}=softmax(GNN^{_{l,pool}}(A^{^{(l)}},X^{^{(l)}}))" /></a></p>
+
+#### Full Graph Representation
+At the penultimate layer L − 1 of a deep GNN model using DIFFPOOL, the assignment matrix S<sup>(L−1)</sup> is set to be a vector of 1’s, such that all nodes at the final layer L are assigned to a single cluster, generating a final embedding vector corresponding to the entire graph.
+
+#### Permutation Invariance
+For graph classification, the pooling layer should be invariant under node permutations. For this to be true the component GNNs must be permutation invariant.
+
+#### Auxiliary Link Prediction Object and Entropy Regularization
+- Difficult to train the pooling GNN using only gradient signal from the graph classification task.
+- Due to non-convex optimization problem.
+- They train pooling GNN with an auxiliary link prediction task.
+- Encodes the intuition that nearby nodes should be pooled.
+- The output cluster assignment for each node should be close to a one-hot vector.
+- To ensure the membership of each cluster or subgraph is clearly defined.
+- To achieve this the entropy of each cluster assignment is regularized.
 
 # Evaluation
 ## Dataset
