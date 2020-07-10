@@ -10,10 +10,10 @@
 - Year: 2019
 
 # Score
-- Idea: 
-- Usability: 
-- Presentation: 
-- Overall: 
+- Idea: 4
+- Usability: 5
+- Presentation: 4
+- Overall: 4
 
 # Contributions
 ## Problem addressed / Motivation
@@ -64,12 +64,36 @@
   <img src="https://github.com/AndrewColligan/Paper-Reading-Notes/blob/master/Notes/Imgs/Hierarchical_GCNN_Fig_3.PNG" width = 400>
 </p>
 
+- Spatial domain convolutional filters for SA1 and SA2 graphs are given by linear approximations to Chebyshev polynomials.
+- Each hierarchical graph level's convolution can be approximated as:
+
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{F}&space;}{_{1}}^{(n\times&space;n)}\approx&space;h{_{1}}\mathbf{A}{_{1}}^{(n\times&space;n)}\:&space;\:&space;\:&space;\:&space;\:&space;\mathbf{F}{_{2}}^{(m\times&space;m)}\approx&space;h{_{2}}\mathbf{A}{_{2}}^{(m\times&space;m)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{F}&space;}{_{1}}^{(n\times&space;n)}\approx&space;h{_{1}}\mathbf{A}{_{1}}^{(n\times&space;n)}\:&space;\:&space;\:&space;\:&space;\:&space;\mathbf{F}{_{2}}^{(m\times&space;m)}\approx&space;h{_{2}}\mathbf{A}{_{2}}^{(m\times&space;m)}" title="\boldsymbol{\mathbf{F} }{_{1}}^{(n\times n)}\approx h{_{1}}\mathbf{A}{_{1}}^{(n\times n)}\: \: \: \: \: \mathbf{F}{_{2}}^{(m\times m)}\approx h{_{2}}\mathbf{A}{_{2}}^{(m\times m)}" /></a></p>
+
+- Several convolutional layers for each graph level, depending on the depth of the network.
+- The hierarchical model deploys parallel filter-learning at different graph levels with intermediate transfer of information between graphs using the learnt embedding operator filters <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{E}&space;}=h{_{3}}\boldsymbol{\mathbf{A}}{_{3}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{E}&space;}=h{_{3}}\boldsymbol{\mathbf{A}}{_{3}}" title="\boldsymbol{\mathbf{E} }=h{_{3}}\boldsymbol{\mathbf{A}}{_{3}}" /></a> and learnt projection operator filters <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{P}&space;}=h{_{4}}\boldsymbol{\mathbf{A}}{_{4}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{P}&space;}=h{_{4}}\boldsymbol{\mathbf{A}}{_{4}}" title="\boldsymbol{\mathbf{P} }=h{_{4}}\boldsymbol{\mathbf{A}}{_{4}}" /></a>
+
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{E}&space;}^{(n\times&space;m)}\boldsymbol{\mathbf{V}&space;}^{(m\times&space;1)}\rightarrow&space;\boldsymbol{\mathbf{V}&space;}^{(n\times&space;1)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{E}&space;}^{(n\times&space;m)}\boldsymbol{\mathbf{V}&space;}^{(m\times&space;1)}\rightarrow&space;\boldsymbol{\mathbf{V}&space;}^{(n\times&space;1)}" title="\boldsymbol{\mathbf{E} }^{(n\times m)}\boldsymbol{\mathbf{V} }^{(m\times 1)}\rightarrow \boldsymbol{\mathbf{V} }^{(n\times 1)}" /></a></p>
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{P}&space;}^{(m\times&space;n)}\boldsymbol{\mathbf{V}&space;}^{(n\times&space;1)}\rightarrow&space;\boldsymbol{\mathbf{V}&space;}^{(m\times&space;1)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{P}&space;}^{(m\times&space;n)}\boldsymbol{\mathbf{V}&space;}^{(n\times&space;1)}\rightarrow&space;\boldsymbol{\mathbf{V}&space;}^{(m\times&space;1)}" title="\boldsymbol{\mathbf{P} }^{(m\times n)}\boldsymbol{\mathbf{V} }^{(n\times 1)}\rightarrow \boldsymbol{\mathbf{V} }^{(m\times 1)}" /></a></p>
+
+- Different architectures were tested, the V1 architecture only included an embedding *E* from SA2 to SA1 feature space.
+- This connection is a residual sum on each vertex vector.
+- The residual nature of the link means that only information from the higher hierarchical layers that is useful are incorporated.
+
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}=\boldsymbol{\mathbf{E}}^{(n\times&space;m)}\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}\boldsymbol{\mathbf{W}}&plus;\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}\in\mathbb{R}^{^{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}=\boldsymbol{\mathbf{E}}^{(n\times&space;m)}\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}\boldsymbol{\mathbf{W}}&plus;\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}\in\mathbb{R}^{^{n}}" title="\boldsymbol{\mathbf{V} }{_{SA1}}^{(n\times 1)}=\boldsymbol{\mathbf{E}}^{(n\times m)}\boldsymbol{\mathbf{V} }{_{SA2}}^{(m\times 1)}\boldsymbol{\mathbf{W}}+\boldsymbol{\mathbf{V} }{_{SA1}}^{(n\times 1)}\in\mathbb{R}^{^{n}}" /></a></p>
+
+- V3 architecture contained a projection from SA1 to SA2 feature space.
+
+<p align="center"><a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}=\boldsymbol{\mathbf{P}}^{(m\times&space;n)}\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}\boldsymbol{\mathbf{W}}&plus;\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}\in\mathbb{R}^{^{m}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}=\boldsymbol{\mathbf{P}}^{(m\times&space;n)}\boldsymbol{\mathbf{V}&space;}{_{SA1}}^{(n\times&space;1)}\boldsymbol{\mathbf{W}}&plus;\boldsymbol{\mathbf{V}&space;}{_{SA2}}^{(m\times&space;1)}\in\mathbb{R}^{^{m}}" title="\boldsymbol{\mathbf{V} }{_{SA2}}^{(m\times 1)}=\boldsymbol{\mathbf{P}}^{(m\times n)}\boldsymbol{\mathbf{V} }{_{SA1}}^{(n\times 1)}\boldsymbol{\mathbf{W}}+\boldsymbol{\mathbf{V} }{_{SA2}}^{(m\times 1)}\in\mathbb{R}^{^{m}}" /></a></p>
+
+
 # Evaluation
 ## Dataset
-
+- 2016 Australian federal election results
+- 2016 Australian Census
 
 ## Metrics
-
+- ReLU activation function
+- ADAM optimiser
 
 ## Results
 <p align="center">
